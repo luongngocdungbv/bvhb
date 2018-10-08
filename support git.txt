@@ -1,3 +1,0 @@
-tải từ git:  git clone https://github.com/luongngocdungbv/bvhb.git
-kiểm tra file chưa được đưa lên git: git status
-Cho git theo dõi file (all) : git add *
