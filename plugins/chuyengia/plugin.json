@@ -1,0 +1,9 @@
+{
+    "name": "Chuyengia",
+    "namespace": "Botble\\Chuyengia\\",
+    "provider": "Botble\\Chuyengia\\Providers\\ChuyengiaServiceProvider",
+    "author": "Sang Nguyen",
+    "url": "http://sangnguyen.info",
+    "version": "1.0",
+    "description": "The description for plugin chuyengia"
+}
