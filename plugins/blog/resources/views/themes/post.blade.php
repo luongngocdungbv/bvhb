@@ -1,6 +1,6 @@
 <div>
     <h3>{{ $post->name }}</h3>
-    {!! Theme::breadcrumb()->render() !!}
+   {!! Theme::breadcrumb()->render() !!}
 </div>
 <header>
     <h3>{{ $post->name }}</h3>
