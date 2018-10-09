@@ -62,43 +62,61 @@ class PluginRemoveCommand extends Command
         $location = config('core.base.general.plugin_path') . '/' . strtolower($plugin);
 
         if ($this->files->isDirectory($location)) {
-            if ($this->confirm('Are you sure you want to permanently delete? [yes|no]', $this->hasOption('force'))) {
-                $this->call('cms:plugin:deactivate', ['name' => strtolower($plugin)]);
-
-                $content = get_file_data($location . '/plugin.json');
-                if (!empty($content)) {
-                    if (!class_exists($content['provider'])) {
-                        $loader = new ClassLoader();
-                        $loader->setPsr4($content['namespace'], base_path('plugins/' . $plugin . '/src'));
-                        $loader->register(true);
-                    }
-
-                    Schema::disableForeignKeyConstraints();
-                    if (class_exists($content['namespace'] . 'Plugin')) {
-                        call_user_func([$content['namespace'] . 'Plugin', 'remove']);
-                    }
-                    Schema::enableForeignKeyConstraints();
-                    $this->line('<info>Remove plugin successfully!</info>');
-                }
-
-                $migrations = scan_folder($location . '/database/migrations');
-                foreach ($migrations as $migration) {
-                    Migration::where('migration', pathinfo($migration, PATHINFO_FILENAME))->delete();
-                }
-
-                $this->files->deleteDirectory($location);
-
-                if (empty($this->files->directories(config('core.base.general.plugin_path')))) {
-                    $this->files->deleteDirectory(config('core.base.general.plugin_path'));
-                }
-
-                Helper::removePluginData($plugin);
-
-                $this->call('cache:clear');
+            if (app()->runningInConsole() &&
+                $this->confirm('Are you sure you want to permanently delete? [yes|no]', $this->hasOption('force'))
+            ) {
+                return $this->processRemove($plugin, $location);
             }
+
+            return $this->processRemove($plugin, $location);
         } else {
             $this->line('This plugin is not exists!');
         }
+
+        return true;
+    }
+
+    /**
+     * @param $plugin
+     * @param $location
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \Exception
+     * @return boolean
+     */
+    protected function processRemove($plugin, $location)
+    {
+        $this->call('cms:plugin:deactivate', ['name' => strtolower($plugin)]);
+
+        $content = get_file_data($location . '/plugin.json');
+        if (!empty($content)) {
+            if (!class_exists($content['provider'])) {
+                $loader = new ClassLoader();
+                $loader->setPsr4($content['namespace'], base_path('plugins/' . $plugin . '/src'));
+                $loader->register(true);
+            }
+
+            Schema::disableForeignKeyConstraints();
+            if (class_exists($content['namespace'] . 'Plugin')) {
+                call_user_func([$content['namespace'] . 'Plugin', 'remove']);
+            }
+            Schema::enableForeignKeyConstraints();
+            $this->line('<info>Remove plugin successfully!</info>');
+        }
+
+        $migrations = scan_folder($location . '/database/migrations');
+        foreach ($migrations as $migration) {
+            Migration::where('migration', pathinfo($migration, PATHINFO_FILENAME))->delete();
+        }
+
+        $this->files->deleteDirectory($location);
+
+        if (empty($this->files->directories(config('core.base.general.plugin_path')))) {
+            $this->files->deleteDirectory(config('core.base.general.plugin_path'));
+        }
+
+        Helper::removePluginData($plugin);
+
+        $this->call('cache:clear');
 
         return true;
     }
