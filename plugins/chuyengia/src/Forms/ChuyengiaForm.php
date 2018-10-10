@@ -26,17 +26,42 @@ class ChuyengiaForm extends FormAbstract
                     'data-counter' => 120,
                 ],
             ])
-            ->add('status', 'select', [
+            ->add('description', 'textarea', [
+                'label' => trans('core.base::forms.description'),
+                'label_attr' => ['class' => 'control-label'],
+                'attr' => [
+                    'rows' => 4,
+                    'placeholder' => trans('core.base::forms.description_placeholder'),
+                    'data-counter' => 400,
+                ],
+            ])
+            ->add('featured', 'onOff', [
+                'label' => trans('core.base::forms.featured'),
+                'label_attr' => ['class' => 'control-label'],
+                'default_value' => false,
+            ])
+            ->add('content', 'editor', [
+                'label' => trans('core.base::forms.content'),
+                'label_attr' => ['class' => 'control-label'],
+                'attr' => [
+                    'rows' => 4,
+                    'placeholder' => trans('core.base::forms.description_placeholder'),
+                    'with-short-code' => true,
+                ],
+            ])
+            ->add('status', 'customSelect', [
                 'label' => trans('core.base::tables.status'),
                 'label_attr' => ['class' => 'control-label required'],
-                'attr' => [
-                    'class' => 'form-control select-full',
-                ],
                 'choices' => [
                     1 => trans('core.base::system.activated'),
                     0 => trans('core.base::system.deactivated'),
                 ],
             ])
+            ->add('image', 'mediaImage', [
+                'label' => trans('core.base::forms.image'),
+                'label_attr' => ['class' => 'control-label'],
+            ])
+          
             ->setBreakFieldPoint('status');
     }
 }

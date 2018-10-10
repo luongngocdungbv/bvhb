@@ -42,5 +42,17 @@ Route::group(['namespace' => 'Botble\Chuyengia\Http\Controllers', 'middleware' =
             ]);
         });
     });
+
+    Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
+
+        Route::get('/chuyengias', [
+            'as' => 'public.chuyengias',
+            'uses' => 'PublicController@getChuyengias',
+        ]);
+        Route::get('/chuyengia', [
+            'as' => 'public.chuyengias',
+            'uses' => 'PublicController@getChuyengias',
+        ]);
+    });
     
 });

@@ -12,6 +12,9 @@ use Botble\Base\Supports\Helper;
 use Botble\Base\Events\SessionStarted;
 use Event;
 use Botble\Base\Traits\LoadAndPublishDataTrait;
+use Language;
+use SeoHelper;
+
 
 class ChuyengiaServiceProvider extends ServiceProvider
 {
@@ -53,6 +56,9 @@ class ChuyengiaServiceProvider extends ServiceProvider
             ->loadAndPublishTranslations()
             ->loadRoutes();
 
+        $this->app->register(RouteServiceProvider::class);
+        $this->app->register(HookServiceProvider::class);
+
         Event::listen(SessionStarted::class, function () {
             dashboard_menu()->registerItem([
                 'id' => 'cms-plugins-chuyengia',
@@ -64,5 +70,17 @@ class ChuyengiaServiceProvider extends ServiceProvider
                 'permissions' => ['chuyengia.list'],
             ]);
         });
+
+        if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
+            Language::registerModule([CHUYENGIA_MODULE_SCREEN_NAME]);
+        }
+
+        $this->app->booted(function () {
+            config(['core.slug.general.supported' => array_merge(config('core.slug.general.supported'), [CHUYENGIA_MODULE_SCREEN_NAME])]);
+            //config(['core.slug.general.prefixes.' . CHUYENGIA_MODULE_SCREEN_NAME => 'chuyengia']);
+
+            SeoHelper::registerModule([CHUYENGIA_MODULE_SCREEN_NAME]);
+        });
+
     }
 }
