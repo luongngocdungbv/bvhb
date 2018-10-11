@@ -69,7 +69,11 @@ class ChuyengiaController extends BaseController
      */
     public function postCreate(ChuyengiaRequest $request, BaseHttpResponse $response)
     {
-        $chuyengia = $this->chuyengiaRepository->createOrUpdate($request->input());
+        $chuyengia = $this->chuyengiaRepository->createOrUpdate(array_merge($request->input(), [
+            'featured' => $request->input('featured', false),
+        ]));
+
+
 
         event(new CreatedContentEvent(CHUYENGIA_MODULE_SCREEN_NAME, $request, $chuyengia));
 
@@ -110,6 +114,7 @@ class ChuyengiaController extends BaseController
         $chuyengia = $this->chuyengiaRepository->findOrFail($id);
 
         $chuyengia->fill($request->input());
+        $chuyengia->featured = $request->input('featured', false);
 
         $this->chuyengiaRepository->createOrUpdate($chuyengia);
 

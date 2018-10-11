@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\{Plugin}\Forms;
+namespace Botble\Danhmucbvhb\Forms;
 
 use Botble\Base\Forms\FormAbstract;
-use Botble\{Plugin}\Http\Requests\{Plugin}Request;
+use Botble\Danhmucbvhb\Http\Requests\DanhmucbvhbRequest;
 
-class {Plugin}Form extends FormAbstract
+class DanhmucbvhbForm extends FormAbstract
 {
 
     /**
@@ -15,8 +15,8 @@ class {Plugin}Form extends FormAbstract
     public function buildForm()
     {
         $this
-            ->setModuleName({PLUGIN}_MODULE_SCREEN_NAME)
-            ->setValidatorClass({Plugin}Request::class)
+            ->setModuleName(DANHMUCBVHB_MODULE_SCREEN_NAME)
+            ->setValidatorClass(DanhmucbvhbRequest::class)
             ->withCustomFields()
             ->add('name', 'text', [
                 'label' => trans('core.base::forms.name'),

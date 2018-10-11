@@ -6,25 +6,42 @@
                 <div class="page-content">
                     <div class="post-group post-group--single">
                         <div class="post-group__header">
-                            <h3 class="post-group__title">{{ __('Best for you') }}</h3>
+                            
+                            <div class="title-section">
+                                <h2>{{ $chuyengia->description }}</h2>
+                                <span></span>
+                            </div>
                         </div>
                         <div class="post-group__content">
                             <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <article class="post post__vertical post__vertical--single post__vertical--simple">
-                                        <div class="post__thumbnail">
-                                            <img src="{{ get_object_image($chuyengia->image, 'medium') }}" alt="{{ $chuyengia->name }}"><a href="{{ route('public.single', $chuyengia->slug) }}" class="post__overlay"></a>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    
+                                    <div class="item-expert">
+                                        <a href="{{ route('public.single', $chuyengia->slug) }}"><img src="{{ get_object_image($chuyengia->image, 'medium') }}" alt="{{ $chuyengia->name }}" width="342" height="300" style="width:100%;"></a>
+                                        <div class="name-doctor">
+                                            <a href="{{ route('public.single', $chuyengia->slug) }}"><p><span>{{$chuyengia->hocvan}}</span> {{$chuyengia->name}}</p></a>
                                         </div>
-                                        <div class="post__content-wrap">
-                                            <header class="post__header">
-                                                <h3 class="post__title"><a href="{{ route('public.single', $chuyengia->slug) }}">{{$chuyengia->name}}</a></h3>
-                                               
-                                            </header>
-                                            <div class="post__content">
-                                                <p data-number-line="2">{{ $chuyengia->description }}</p>
+                                        <div class="item-expert-text">
+                                            <h4><a href="{{ route('public.single', $chuyengia->slug) }}">{{ $chuyengia->chucvu }}</a></h4>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-12">
+                                    <div class="expert-container home-expert-container">
+                                        
+                                        <div class="item-expert-details">
+                                            <div class="item-expert-details-title">
+                                                <h4>{{$chuyengia->hocvan}}</h4>
+                                                <h2>{{$chuyengia->name}}</h2>
+                                                <h3>{{ $chuyengia->chucvu }}</h3>
+                                                
+                                            </div>
+                                            <div class="item-expert-details-content">
+                                               {!! $chuyengia->content !!}                               
                                             </div>
                                         </div>
-                                    </article>
+                                    </div>
                                 </div>
                             </div>
                         </div>

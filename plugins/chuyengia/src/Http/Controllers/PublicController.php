@@ -42,7 +42,7 @@ class PublicController
      */
     public function registerAssets()
     {
-        return "TEST";
+        return "add css nếu có";
     }
 
     public function getChuyengias()

@@ -42,5 +42,17 @@ Route::group(['namespace' => 'Botble\{Plugin}\Http\Controllers', 'middleware' =>
             ]);
         });
     });
+
+    Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
+
+        Route::get('/{plugin}s', [
+            'as' => 'public.{plugin}s',
+            'uses' => 'PublicController@get{Plugin}s',
+        ]);
+        Route::get('/{plugin}', [
+            'as' => 'public.{plugin}s',
+            'uses' => 'PublicController@get{Plugin}s',
+        ]);
+    });
     
 });

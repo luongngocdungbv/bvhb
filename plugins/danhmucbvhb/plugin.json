@@ -1,0 +1,9 @@
+{
+    "name": "Danhmucbvhb",
+    "namespace": "Botble\\Danhmucbvhb\\",
+    "provider": "Botble\\Danhmucbvhb\\Providers\\DanhmucbvhbServiceProvider",
+    "author": "Sang Nguyen",
+    "url": "http://sangnguyen.info",
+    "version": "1.0",
+    "description": "The description for plugin danhmucbvhb"
+}

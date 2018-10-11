@@ -45,7 +45,7 @@ Route::group(['namespace' => 'Botble\Chuyengia\Http\Controllers', 'middleware' =
 
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
 
-        Route::get('/chuyengias', [
+        Route::get('/chuyen-gia', [
             'as' => 'public.chuyengias',
             'uses' => 'PublicController@getChuyengias',
         ]);

@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class Create{Plugin}Table extends Migration
+class CreateDanhmucbvhbTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class Create{Plugin}Table extends Migration
      */
     public function up()
     {
-        Schema::create('{plugins}', function (Blueprint $table) {
+        Schema::create('danhmucbvhbs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name', 255);
             $table->string('description', 400);
@@ -31,6 +31,6 @@ class Create{Plugin}Table extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('{plugins}');
+        Schema::dropIfExists('danhmucbvhbs');
     }
 }

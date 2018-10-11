@@ -1,4 +1,15 @@
+                
+<section  class="section page-intro-chuyengia pt-100 pb-100 ">
+    <div class="title-section">
+        <h2>{{trans('plugins.chuyengia::chuyengia.chucvu_hello')}}</h2>
+        <span></span>
+        <p>{{trans('plugins.chuyengia::chuyengia.chucvu_intro')}}</p>
+    </div>
+</section>
 
+
+
+               
                 <div class="page-content">
 
                     <article class="post post--single">
@@ -9,8 +20,8 @@
                                 <div class="gallery-wrap">
 
                                     <div class="container">
-
-
+                                   
+                    
                                     @foreach ($chuyengias as $chuyengia)
 										
                                         <div class="item-expert col-lg-4">
@@ -19,14 +30,16 @@
 
                                             <div class="name-doctor">
 
-                                                <!-- <a href="{{ route('public.single', $chuyengia->slug) }}"><p><span>{{ $chuyengia->hocvan }}</span>{{ $chuyengia->name }}</p></a> -->
+                                                <a href="{{ route('public.single', $chuyengia->slug) }}"><p><span>{{ $chuyengia->hocvan }}</span> {{ $chuyengia->name }}</p></a>
 
                                             </div>
 
                                             <div class="item-expert-text">
+                                                 
+                                            <h4><a href="{{ route('public.single', $chuyengia->slug) }}">{{ $chuyengia->chucvu }}</a></h4>
+                                           <!--  <p>{!! string_limit_words($chuyengia->content, 80) }}</p>  -->
 
-                                                <p style="font-size:13px;">{{ $chuyengia->description }}</p>
-
+            
                                             </div>
 
                                         </div>

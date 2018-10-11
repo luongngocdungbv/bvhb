@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\{Plugin}\Models;
+namespace Botble\Danhmucbvhb\Models;
 
 use Eloquent;
 use Botble\ACL\Models\User;
 use Botble\Slug\Traits\SlugTrait;
 use Venturecraft\Revisionable\RevisionableTrait;
 /**
- * Botble\{Plugin}\Models\{Plugin}
+ * Botble\Danhmucbvhb\Models\Danhmucbvhb
  *
  * @mixin \Eloquent
  */
-class {Plugin} extends Eloquent
+class Danhmucbvhb extends Eloquent
 {
     use RevisionableTrait;
     use SlugTrait;
@@ -20,7 +20,7 @@ class {Plugin} extends Eloquent
      *
      * @var string
      */
-    protected $table = '{plugins}';
+    protected $table = 'danhmucbvhbs';
 
     /**
      * @var array
@@ -33,5 +33,5 @@ class {Plugin} extends Eloquent
         'status',
     ];
 
-    protected $screen = {PLUGIN}_MODULE_SCREEN_NAME;
+    protected $screen = DANHMUCBVHB_MODULE_SCREEN_NAME;
 }
