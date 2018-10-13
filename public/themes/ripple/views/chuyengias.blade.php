@@ -24,9 +24,9 @@
                     
                                     @foreach ($chuyengias as $chuyengia)
 										
-                                        <div class="item-expert col-lg-4">
+                                        <div class="item-expert col-lg-4 col-xs-12 col-sm-6  col-md-6">
 
-                                            <a href="{{ route('public.single', $chuyengia->slug) }}"><img src="@if($chuyengia->image == '')/uploads/1/def-no-image.png @else {{ get_object_image($chuyengia->image, 'medium') }}@endif " alt="{{ $chuyengia->name }}" width="342" height="300" style="width:100%;"></a>
+                                            <a href="{{ route('public.single', $chuyengia->slug) }}"><img src="@if($chuyengia->image == '')/vendor/core/images/favicon.png @else {{ get_object_image($chuyengia->image, 'medium') }}@endif " alt="{{ $chuyengia->name }}" width="342" height="300" style="width:100%;"></a>
 
                                             <div class="name-doctor">
 
