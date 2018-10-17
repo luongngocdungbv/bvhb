@@ -45,11 +45,11 @@ Route::group(['namespace' => 'Botble\Danhmucbvhb\Http\Controllers', 'middleware'
 
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
 
-        Route::get('/danhmucbvhbs', [
+        Route::get('/danh-muc', [
             'as' => 'public.danhmucbvhbs',
             'uses' => 'PublicController@getDanhmucbvhbs',
         ]);
-        Route::get('/danhmucbvhb', [
+        Route::get('/danh-muc-bvdkhb', [
             'as' => 'public.danhmucbvhbs',
             'uses' => 'PublicController@getDanhmucbvhbs',
         ]);

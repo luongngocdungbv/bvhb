@@ -47,11 +47,11 @@ Route::group(['namespace' => 'Botble\{Plugin}\Http\Controllers', 'middleware' =>
 
         Route::get('/{plugin}s', [
             'as' => 'public.{plugin}s',
-            'uses' => 'PublicController@get{Plugin}s',
+            'uses' => 'PublicController@get{Plugins}',
         ]);
         Route::get('/{plugin}', [
             'as' => 'public.{plugin}s',
-            'uses' => 'PublicController@get{Plugin}s',
+            'uses' => 'PublicController@get{Plugins}',
         ]);
     });
     

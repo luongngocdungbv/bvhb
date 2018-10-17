@@ -27,6 +27,8 @@ class Danhmucbvhb extends Eloquent
      */
     protected $fillable = [
         'name',
+        'price_cates',
+        'price_type',
         'image',
         'description',
         'content',

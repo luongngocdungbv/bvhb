@@ -26,15 +26,34 @@ class DanhmucbvhbForm extends FormAbstract
                     'data-counter' => 120,
                 ],
             ])
-             ->add('description', 'textarea', [
-                'label' => trans('core.base::forms.description'),
-                'label_attr' => ['class' => 'control-label'],
+            ->add('price_cates', 'text', [
+                'label' => trans('plugins.danhmucbvhb::danhmucbvhb.price'),
+                'label_attr' => ['class' => 'control-label required'],
                 'attr' => [
-                    'rows' => 4,
-                    'placeholder' => trans('core.base::forms.description_placeholder'),
-                    'data-counter' => 400,
+                    'placeholder' => trans('plugins.danhmucbvhb::danhmucbvhb.price_placeholder'),
+                    'data-counter' => 20,
                 ],
             ])
+            /*->add('price_type', 'customSelect', [
+                'label' => trans('plugins.danhmucbvhb::danhmucbvhb.price_type'),
+                'label_attr' => ['class' => 'control-label required'],
+                'choices' => [
+                    0 => trans('plugins.danhmucbvhb::danhmucbvhb.price_type_1'),
+                    'giagoisan' => 'Giá Gói Sản',
+                    'giaxetnghiem' => 'Giá Xét Nghiệm',
+                    'giagoikhamsuckhoe' => 'Giá Gói Khám Sức Khỏe',  
+                ],
+            ])*/
+            ->add('price_type', 'customRadio', [
+                'label' => trans('plugins.danhmucbvhb::danhmucbvhb.price_type'),
+                'label_attr' => ['class' => 'control-label required'],
+                'choices' => [
+                    ["giagoisan", "Giá Gói Sản"],
+                    ["giaxetnghiem", "Giá Xét Nghiệm"],
+                    ["giagoikhamsuckhoe", "Giá Gói Khám Sức Khỏe"],
+                ],
+            ])
+
             ->add('content', 'editor', [
                 'label' => trans('core.base::forms.content'),
                 'label_attr' => ['class' => 'control-label'],

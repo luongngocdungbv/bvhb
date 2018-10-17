@@ -47,6 +47,9 @@ class DanhmucbvhbTable extends TableAbstract
             ->editColumn('name', function ($item) {
                 return anchor_link(route('danhmucbvhb.edit', $item->id), $item->name);
             })
+            ->editColumn('price_type', function ($item) {
+                return  table_type_dmbvhb($item->price_type);
+            })
             ->editColumn('checkbox', function ($item) {
                 return table_checkbox($item->id);
             })
@@ -75,7 +78,7 @@ class DanhmucbvhbTable extends TableAbstract
     public function query()
     {
         $model = $this->repository->getModel();
-        $query = $model->select(['danhmucbvhbs.id', 'danhmucbvhbs.name', 'danhmucbvhbs.created_at', 'danhmucbvhbs.status']);
+        $query = $model->select(['danhmucbvhbs.id', 'danhmucbvhbs.name', 'danhmucbvhbs.price_type', 'danhmucbvhbs.created_at', 'danhmucbvhbs.status']);
         return $this->applyScopes(apply_filters(BASE_FILTER_TABLE_QUERY, $query, $model, DANHMUCBVHB_MODULE_SCREEN_NAME));
     }
 
@@ -95,6 +98,11 @@ class DanhmucbvhbTable extends TableAbstract
             'name' => [
                 'name' => 'danhmucbvhbs.name',
                 'title' => trans('core.base::tables.name'),
+                'class' => 'text-left',
+            ],
+            'price_type' => [
+                'name' => 'danhmucbvhbs.price_type',
+                'title' => trans('plugins.danhmucbvhb::danhmucbvhb.price_type'),
                 'class' => 'text-left',
             ],
             'created_at' => [
@@ -154,6 +162,15 @@ class DanhmucbvhbTable extends TableAbstract
                 'type' => 'text',
                 'validate' => 'required|max:120',
                 'callback' => 'getNames',
+            ],
+            'danhmucbvhbs.price_type' => [
+                'title' => trans('plugins.danhmucbvhb::danhmucbvhb.price_type'),
+                'type' => 'select',
+                'choices' => [
+                    'giagoisan' => 'Giá Gói Sản',
+                    'giaxetnghiem' => 'Giá Xét Nghiệm',
+                    'giagoikhamsuckhoe' => 'Giá Gói Khám Sức Khỏe',  
+                ],
             ],
             'danhmucbvhbs.status' => [
                 'title' => trans('core.base::tables.status'),

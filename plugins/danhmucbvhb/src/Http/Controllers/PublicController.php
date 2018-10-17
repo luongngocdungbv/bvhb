@@ -45,13 +45,13 @@ class PublicController
         return "add css nếu có";
     }
 
-    public function get{Plugins}()
+    public function getDanhmucbvhbs()
     {
         $this::registerAssets();
 
-        SeoHelper::setTitle(__('Title danhmucbvhb desciption home'));
+        SeoHelper::setTitle(__('Danh mục & Giá tại Bệnh viện DK Hòa Bình'));
 
-        $limit = request()->input('paginate', 9);
+        $limit = request()->input('paginate', 40);
 
         $danhmucbvhbs = $this->danhmucbvhbRepository->getModel()->orderBy('created_at', 'desc')->paginate($limit);
         

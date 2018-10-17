@@ -24,17 +24,17 @@ class HookServiceProvider extends ServiceProvider
     {
         if ($slug instanceof Eloquent && $slug->reference == {PLUGIN}_MODULE_SCREEN_NAME) {
             
-            ${Plugin} = app({Plugin}Interface::class)->findById($slug->reference_id);
+            ${plugin} = app({Plugin}Interface::class)->findById($slug->reference_id);
 
-            ${Plugin} = apply_filters(BASE_FILTER_BEFORE_GET_SINGLE, ${Plugin}, app({Plugin}Interface::class)->getModel(), {PLUGIN}_MODULE_SCREEN_NAME);
+            ${plugin} = apply_filters(BASE_FILTER_BEFORE_GET_SINGLE, ${plugin}, app({Plugin}Interface::class)->getModel(), {PLUGIN}_MODULE_SCREEN_NAME);
 
-            Theme::breadcrumb()->add(__('<i class="fa fa-home" aria-hidden="true"></i>'), route('public.index'))->add(${Plugin}->name, route('public.single', $slug->key));
+            Theme::breadcrumb()->add(__('<i class="fa fa-home" aria-hidden="true"></i>'), route('public.index'))->add(${plugin}->name, route('public.single', $slug->key));
 
-            do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, {PLUGIN}_MODULE_SCREEN_NAME, ${Plugin});
+            do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, {PLUGIN}_MODULE_SCREEN_NAME, ${plugin});
 
             return [
-                'view' => '{Plugin}', // Chuyền đến file view Public/Theme/Your theme/ view -> name view {Plugin}
-                'data' => compact('{Plugin}'), //chuyền data đến view {Plugin}
+                'view' => '{plugin}', // Chuyền đến file view Public/Theme/Your theme/ view -> name view {Plugin}
+                'data' => compact('{plugin}'), //chuyền data đến view {Plugin}
             ];
         }
         return $slug;

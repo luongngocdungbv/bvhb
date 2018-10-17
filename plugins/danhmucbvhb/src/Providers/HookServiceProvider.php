@@ -24,17 +24,17 @@ class HookServiceProvider extends ServiceProvider
     {
         if ($slug instanceof Eloquent && $slug->reference == DANHMUCBVHB_MODULE_SCREEN_NAME) {
             
-            $Danhmucbvhb = app(DanhmucbvhbInterface::class)->findById($slug->reference_id);
+            $danhmucbvhb = app(DanhmucbvhbInterface::class)->findById($slug->reference_id);
 
-            $Danhmucbvhb = apply_filters(BASE_FILTER_BEFORE_GET_SINGLE, $Danhmucbvhb, app(DanhmucbvhbInterface::class)->getModel(), DANHMUCBVHB_MODULE_SCREEN_NAME);
+            $danhmucbvhb = apply_filters(BASE_FILTER_BEFORE_GET_SINGLE, $danhmucbvhb, app(DanhmucbvhbInterface::class)->getModel(), DANHMUCBVHB_MODULE_SCREEN_NAME);
 
-            Theme::breadcrumb()->add(__('<i class="fa fa-home" aria-hidden="true"></i>'), route('public.index'))->add($Danhmucbvhb->name, route('public.single', $slug->key));
+            Theme::breadcrumb()->add(__('<i class="fa fa-home" aria-hidden="true"></i>'), route('public.index'))->add($danhmucbvhb->name, route('public.single', $slug->key));
 
-            do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, DANHMUCBVHB_MODULE_SCREEN_NAME, $Danhmucbvhb);
+            do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, DANHMUCBVHB_MODULE_SCREEN_NAME, $danhmucbvhb);
 
             return [
-                'view' => 'Danhmucbvhb', // Chuyền đến file view Public/Theme/Your theme/ view -> name view Danhmucbvhb
-                'data' => compact('Danhmucbvhb'), //chuyền data đến view Danhmucbvhb
+                'view' => 'danhmucbvhb', // Chuyền đến file view Public/Theme/Your theme/ view -> name view Danhmucbvhb
+                'data' => compact('danhmucbvhb'), //chuyền data đến view Danhmucbvhb
             ];
         }
         return $slug;

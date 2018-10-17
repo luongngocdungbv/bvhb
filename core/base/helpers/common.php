@@ -108,6 +108,30 @@ if (!function_exists('table_status')) {
     }
 }
 
+if (!function_exists('table_type_dmbvhb')) {
+    /**
+     * @param $selected
+     * @param array $statuses
+     * @return string
+     * @internal param $status
+     * @internal param null $activated_text
+     * @internal param null $deactivated_text
+     * @author Sang Nguyen
+     * @throws Throwable
+     */
+    function table_type_dmbvhb($selected, $statuses = [])
+    {
+        if (empty($statuses) || !is_array($statuses)) {
+            $statuses = [
+                'giagoisan' => [ 'text' => 'Gói Sản',],
+                'giaxetnghiem' => ['text' => 'Giá Xét Nghiệm',],
+                'giagoikhamsuckhoe' => ['text' => 'Gói Khám Sức Khỏe',],
+            ];
+        }
+        return view('core.base::elements.tables.status', compact('selected', 'statuses'))->render();
+    }
+}
+
 if (!function_exists('table_featured')) {
     /**
      * @param $is_featured

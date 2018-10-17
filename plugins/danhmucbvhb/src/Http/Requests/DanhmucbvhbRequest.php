@@ -17,6 +17,8 @@ class DanhmucbvhbRequest extends Request
     {
         return [
             'name' => 'required',
+            'price_cates' => 'required',
+            'price_type' => 'required',
         ];
     }
 }
