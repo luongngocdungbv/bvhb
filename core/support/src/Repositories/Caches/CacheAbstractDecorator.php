@@ -94,7 +94,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
 
     /**
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getModel()
     {
@@ -105,7 +105,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * Get table name.
      *
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getTable()
     {
@@ -116,7 +116,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * Get screen
      *
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getScreen() : string
     {
@@ -128,7 +128,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param $screen
      * @param bool $is_single
      * @return Builder
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function applyBeforeExecuteQuery($data, $screen, $is_single = false)
     {
@@ -139,7 +139,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * Make a new instance of the entity to query on.
      * @param array $with
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function make(array $with = [])
     {
@@ -152,7 +152,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param int $id model ID
      * @param array $with
      * @return Object object of model information
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function findById($id, array $with = [])
     {
@@ -163,7 +163,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param $id
      * @param array $with
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function findOrFail($id, array $with = [])
     {
@@ -174,7 +174,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param $function
      * @param $args
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDataIfExistCache($function, array $args)
     {
@@ -201,7 +201,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param $function
      * @param array $args
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDataWithoutCache($function, array $args)
     {
@@ -215,7 +215,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param array $select
      * @param array $with
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getFirstBy(array $condition = [], array $select = [], array $with = [])
     {
@@ -226,7 +226,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param string $column
      * @param string $key
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function pluck($column, $key = null)
     {
@@ -238,7 +238,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      *
      * @param array $with Eager load related models
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function all(array $with = [])
     {
@@ -252,7 +252,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param array $with
      * @param array $select
      * @return Collection
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function allBy(array $condition, array $with = [], array $select = ['*'])
     {
@@ -262,7 +262,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
     /**
      * @param array $data
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function create(array $data)
     {
@@ -273,7 +273,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param $function
      * @param $args
      * @param boolean $flushCache
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @return mixed
      */
     public function flushCacheAndUpdateData($function, $args, $flushCache = true)
@@ -291,7 +291,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param Model|array $data
      * @param array $condition
      * @return false|Model
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function createOrUpdate($data, $condition = [])
     {
@@ -303,7 +303,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      *
      * @param Model $model
      * @return bool
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function delete(Model $model)
     {
@@ -314,7 +314,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param array $data
      * @param array $with
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function firstOrCreate(array $data, array $with = [])
     {
@@ -325,7 +325,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param array $condition
      * @param array $data
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function update(array $condition, array $data)
     {
@@ -336,7 +336,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param array $select
      * @param array $condition
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function select(array $select = ['*'], array $condition = [])
     {
@@ -346,7 +346,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
     /**
      * @param array $condition
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function deleteBy(array $condition = [])
     {
@@ -356,7 +356,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
     /**
      * @param array $condition
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function count(array $condition = [])
     {
@@ -368,7 +368,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param array $value
      * @param array $args
      * @return \Illuminate\Database\Eloquent\Collection|static[]
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getByWhereIn($column, array $value = [], array $args = [])
     {
@@ -387,7 +387,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
     /**
      * @param array $condition
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function forceDelete(array $condition = [])
     {
@@ -397,7 +397,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
     /**
      * @param array $condition
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function restoreBy(array $condition = [])
     {
@@ -410,7 +410,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
      * @param array $condition
      * @param array $select
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getFirstByWithTrash(array $condition = [], array $select = [])
     {
@@ -420,7 +420,7 @@ abstract class CacheAbstractDecorator implements RepositoryInterface
     /**
      * @param array $data
      * @return bool
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function insert(array $data)
     {

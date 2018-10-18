@@ -22,7 +22,7 @@ class MediaSettingCacheDecorator extends CacheAbstractDecorator implements Media
      * MediaSettingCacheDecorator constructor.
      * @param MediaSettingInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(MediaSettingInterface $repository, CacheInterface $cache)
     {

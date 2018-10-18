@@ -45,7 +45,7 @@ class RenderingJsonFeedListener
      * Handle the event.
      *
      * @return void
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function handle()
     {

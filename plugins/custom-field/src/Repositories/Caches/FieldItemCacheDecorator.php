@@ -24,7 +24,7 @@ class FieldItemCacheDecorator extends CacheAbstractDecorator implements FieldIte
      * FieldItemCacheDecorator constructor.
      * @param FieldItemInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(FieldItemInterface $repository, CacheInterface $cache)
     {

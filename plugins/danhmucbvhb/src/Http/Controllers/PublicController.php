@@ -30,7 +30,7 @@ class PublicController
     /**
      * PublicController constructor.
      * @param danhmucbvhbInterface $danhmucbvhbRepository
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(DanhmucbvhbInterface $danhmucbvhbRepository)
     {
@@ -38,7 +38,7 @@ class PublicController
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function registerAssets()
     {

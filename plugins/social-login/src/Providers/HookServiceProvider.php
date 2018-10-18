@@ -12,7 +12,7 @@ class HookServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {
@@ -26,7 +26,7 @@ class HookServiceProvider extends ServiceProvider
      * @param $module
      * @return null|string
      * @throws \Throwable
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function addLoginOptions($html, $module)
     {

@@ -19,7 +19,7 @@ class SocialLoginServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function register()
     {
@@ -27,7 +27,7 @@ class SocialLoginServiceProvider extends ServiceProvider
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {

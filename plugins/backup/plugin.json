@@ -2,8 +2,8 @@
     "name": "Backup",
     "namespace": "Botble\\Backup\\",
     "provider": "Botble\\Backup\\Providers\\BackupServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
     "version": "2.6",
     "description": "Backup & restore database, uploads folder"
 }

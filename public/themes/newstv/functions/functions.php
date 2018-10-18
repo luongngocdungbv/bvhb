@@ -21,7 +21,7 @@ add_shortcode('google-map', 'Google map', 'Custom map', 'add_google_map_shortcod
 /**
  * @param $shortcode
  * @return mixed
- * @author Sang Nguyen
+ * @author DGL Custom
  * @throws \Botble\Theme\Exceptions\UnknownPartialFileException
  * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
  */
@@ -37,7 +37,7 @@ add_shortcode('youtube-video', 'Youtube video', 'Add youtube video', 'add_youtub
 /**
  * @param $shortcode
  * @return mixed
- * @author Sang Nguyen
+ * @author DGL Custom
  * @throws \Botble\Theme\Exceptions\UnknownPartialFileException
  * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
  */

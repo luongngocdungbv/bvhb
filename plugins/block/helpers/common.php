@@ -6,7 +6,7 @@ if (!function_exists('get_list_blocks')) {
     /**
      * @param array $condition
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     function get_list_blocks(array $condition)
     {

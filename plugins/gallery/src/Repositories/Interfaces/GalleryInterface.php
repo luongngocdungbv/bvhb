@@ -11,19 +11,19 @@ interface GalleryInterface extends RepositoryInterface
      * Get all galleries.
      *
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getAll();
 
     /**
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDataSiteMap();
 
     /**
      * @param $limit
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getFeaturedGalleries($limit);
 }

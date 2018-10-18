@@ -2,8 +2,8 @@
     "name": "Analytics",
     "namespace": "Botble\\Analytics\\",
     "provider": "Botble\\Analytics\\Providers\\AnalyticsServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
     "version": "2.6",
     "description": "Tracking data from Google Analytics"
 }

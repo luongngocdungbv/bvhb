@@ -27,7 +27,7 @@ class MemberController extends BaseController
 
     /**
      * @param MemberInterface $memberRepository
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(MemberInterface $memberRepository)
     {
@@ -38,7 +38,7 @@ class MemberController extends BaseController
      * Display all members
      * @param MemberTable $dataTable
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function getList(MemberTable $dataTable)
@@ -52,7 +52,7 @@ class MemberController extends BaseController
      * Show create form
      * @param FormBuilder $formBuilder
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getCreate(FormBuilder $formBuilder)
     {
@@ -72,7 +72,7 @@ class MemberController extends BaseController
      * @param MemberCreateRequest $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postCreate(MemberCreateRequest $request, BaseHttpResponse $response)
     {
@@ -93,7 +93,7 @@ class MemberController extends BaseController
      * @param $id
      * @param FormBuilder $formBuilder
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getEdit($id, FormBuilder $formBuilder)
     {
@@ -115,7 +115,7 @@ class MemberController extends BaseController
      * @param MemberEditRequest $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postEdit($id, MemberEditRequest $request, BaseHttpResponse $response)
     {
@@ -139,7 +139,7 @@ class MemberController extends BaseController
      * @param $id
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDelete(Request $request, $id, BaseHttpResponse $response)
     {
@@ -160,7 +160,7 @@ class MemberController extends BaseController
      * @param Request $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postDeleteMany(Request $request, BaseHttpResponse $response)
     {

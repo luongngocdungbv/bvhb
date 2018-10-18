@@ -2,8 +2,8 @@
     "name": "Translation",
     "namespace": "Botble\\Translation\\",
     "provider": "Botble\\Translation\\Providers\\TranslationServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
     "version": "2.6",
     "description": "Manage translation text"
 }

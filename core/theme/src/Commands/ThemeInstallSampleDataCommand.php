@@ -43,7 +43,7 @@ class ThemeInstallSampleDataCommand extends Command
 
     /**
      * Execute the console command.
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function handle()

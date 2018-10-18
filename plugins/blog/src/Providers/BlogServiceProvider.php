@@ -27,7 +27,7 @@ use SeoHelper;
 /**
  * Class BlogServiceProvider
  * @package Botble\Blog
- * @author Sang Nguyen
+ * @author DGL Custom
  * @since 02/07/2016 09:50 AM
  */
 class BlogServiceProvider extends ServiceProvider
@@ -40,7 +40,7 @@ class BlogServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function register()
     {
@@ -75,7 +75,7 @@ class BlogServiceProvider extends ServiceProvider
 
     /**
      * Boot the service provider.
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {

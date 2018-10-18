@@ -25,7 +25,7 @@ class {Plugin}ServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function register()
     {
@@ -43,7 +43,7 @@ class {Plugin}ServiceProvider extends ServiceProvider
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {

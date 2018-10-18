@@ -10,7 +10,7 @@ class MailVariableFacade extends Facade
 
     /**
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @since 3.2
      */
     protected static function getFacadeAccessor()

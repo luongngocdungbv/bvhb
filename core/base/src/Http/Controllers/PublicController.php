@@ -56,7 +56,7 @@ class PublicController extends Controller
      * @param MembershipAuthorization $authorization
      * @return mixed
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getIndex(SettingStore $settingStore, MembershipAuthorization $authorization)
     {
@@ -81,7 +81,7 @@ class PublicController extends Controller
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse|\Response
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getView($key, BaseHttpResponse $response)
     {
@@ -106,7 +106,7 @@ class PublicController extends Controller
 
     /**
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getSiteMap()
     {
@@ -119,7 +119,7 @@ class PublicController extends Controller
     /**
      * Generate JSON feed
      * @return array
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getJsonFeed()
     {

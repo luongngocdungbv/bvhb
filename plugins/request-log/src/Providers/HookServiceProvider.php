@@ -18,7 +18,7 @@ class HookServiceProvider extends ServiceProvider
 
     /**
      * Boot the service provider.
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {
@@ -30,7 +30,7 @@ class HookServiceProvider extends ServiceProvider
      * Fire event log
      *
      * @param $code
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function handleSiteError($code)
     {
@@ -42,7 +42,7 @@ class HookServiceProvider extends ServiceProvider
      * @param Collection $widget_settings
      * @return array
      * @throws \Throwable
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function registerDashboardWidgets($widgets, $widget_settings)
     {

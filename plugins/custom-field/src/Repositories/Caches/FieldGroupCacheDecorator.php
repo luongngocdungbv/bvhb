@@ -24,7 +24,7 @@ class FieldGroupCacheDecorator extends CacheAbstractDecorator implements FieldGr
      * FieldGroupCacheDecorator constructor.
      * @param FieldGroupInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(FieldGroupInterface $repository, CacheInterface $cache)
     {

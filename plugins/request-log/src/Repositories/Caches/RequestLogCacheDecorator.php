@@ -23,7 +23,7 @@ class RequestLogCacheDecorator extends CacheAbstractDecorator implements Request
      * PostCacheDecorator constructor.
      * @param RequestLogInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(RequestLogInterface $repository, CacheInterface $cache)
     {

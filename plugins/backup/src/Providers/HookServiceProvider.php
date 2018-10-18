@@ -12,7 +12,7 @@ class HookServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {
@@ -26,7 +26,7 @@ class HookServiceProvider extends ServiceProvider
     /**
      * @param string $alert
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function registerAdminAlert($alert)
@@ -38,7 +38,7 @@ class HookServiceProvider extends ServiceProvider
      * @param null $data
      * @return string
      * @throws \Throwable
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function addBackupSetting($data = null)
     {

@@ -24,7 +24,7 @@ class BlockServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function register()
     {
@@ -42,7 +42,7 @@ class BlockServiceProvider extends ServiceProvider
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {

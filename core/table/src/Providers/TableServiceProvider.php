@@ -30,7 +30,7 @@ class TableServiceProvider extends ServiceProvider
 
     /**
      * Bootstrap the application events.
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {

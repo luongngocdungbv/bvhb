@@ -28,7 +28,7 @@ class {Widget}Widget extends AbstractWidget
 
     /**
      * Widget constructor.
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct()
     {

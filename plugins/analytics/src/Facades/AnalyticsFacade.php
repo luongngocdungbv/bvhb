@@ -12,7 +12,7 @@ class AnalyticsFacade extends Facade
 {
     /**
      * @return string
-     * @modified Sang Nguyen
+     * @modified DGL Custom
      */
     protected static function getFacadeAccessor()
     {

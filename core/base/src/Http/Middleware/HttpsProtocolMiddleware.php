@@ -12,7 +12,7 @@ class HttpsProtocolMiddleware
      * @param Request $request
      * @param Closure $next
      * @return \Illuminate\Http\RedirectResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function handle($request, Closure $next)
     {

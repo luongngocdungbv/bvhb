@@ -63,7 +63,7 @@ Route::group(['namespace' => 'Botble\Base\Http\Controllers', 'middleware' => 'we
             'uses' => 'PublicController@getJsonFeed',
         ]);
 
-        Route::get('{slug}.html' . config('core.base.general.public_single_ending_url'), [
+        Route::get('{slug}' . config('core.base.general.public_single_ending_url'), [
             'as' => 'public.single',
             'uses' => 'PublicController@getView',
         ]);

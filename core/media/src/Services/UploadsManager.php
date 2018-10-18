@@ -20,7 +20,7 @@ class UploadsManager
     protected $mime_type;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct()
     {
@@ -35,7 +35,7 @@ class UploadsManager
      *
      * @param $folder
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected function cleanFolder($folder)
     {
@@ -47,7 +47,7 @@ class UploadsManager
      *
      * @param $path
      * @return array
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function fileDetails($path)
     {
@@ -65,7 +65,7 @@ class UploadsManager
      *
      * @param $path
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function uploadPath($path)
     {
@@ -77,7 +77,7 @@ class UploadsManager
      *
      * @param $path
      * @return mixed|null|string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function fileMimeType($path)
     {
@@ -89,7 +89,7 @@ class UploadsManager
      *
      * @param $path
      * @return int
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function fileSize($path)
     {
@@ -101,7 +101,7 @@ class UploadsManager
      *
      * @param $path
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function fileModified($path)
     {
@@ -113,7 +113,7 @@ class UploadsManager
      *
      * @param $folder
      * @return bool|string|\Symfony\Component\Translation\TranslatorInterface
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function createDirectory($folder)
     {
@@ -131,7 +131,7 @@ class UploadsManager
      *
      * @param $folder
      * @return bool|string|\Symfony\Component\Translation\TranslatorInterface
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function deleteDirectory($folder)
     {
@@ -153,7 +153,7 @@ class UploadsManager
      *
      * @param $path
      * @return bool|string|\Symfony\Component\Translation\TranslatorInterface
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function deleteFile($path)
     {
@@ -181,7 +181,7 @@ class UploadsManager
      * @param $path
      * @param $content
      * @return bool|string|\Symfony\Component\Translation\TranslatorInterface
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function saveFile($path, $content)
     {

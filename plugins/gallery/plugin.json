@@ -2,8 +2,8 @@
     "name": "Gallery",
     "namespace": "Botble\\Gallery\\",
     "provider": "Botble\\Gallery\\Providers\\GalleryServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
     "version": "2.7",
     "description": "Create or easy to add gallery images to posts, pages..."
 }

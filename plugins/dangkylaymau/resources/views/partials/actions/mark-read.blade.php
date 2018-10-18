@@ -1,0 +1,1 @@
+<i class="fa fa-eye-slash"></i> {{ trans('plugins.dangkylaymau::dangkylaymau.mark_as_read') }}

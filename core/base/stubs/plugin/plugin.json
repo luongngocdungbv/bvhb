@@ -2,8 +2,8 @@
     "name": "{Plugin}",
     "namespace": "Botble\\{Plugin}\\",
     "provider": "Botble\\{Plugin}\\Providers\\{Plugin}ServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
-    "version": "1.0",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
+    "version": "3.0",
     "description": "The description for plugin {plugin}"
 }

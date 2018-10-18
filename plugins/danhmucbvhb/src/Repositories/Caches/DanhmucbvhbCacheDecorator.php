@@ -22,7 +22,7 @@ class DanhmucbvhbCacheDecorator extends CacheAbstractDecorator implements Danhmu
      * DanhmucbvhbCacheDecorator constructor.
      * @param DanhmucbvhbInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(DanhmucbvhbInterface $repository, CacheInterface $cache)
     {

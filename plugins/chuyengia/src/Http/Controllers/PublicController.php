@@ -30,7 +30,7 @@ class PublicController
     /**
      * PublicController constructor.
      * @param chuyengiaInterface $chuyengiaRepository
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(ChuyengiaInterface $chuyengiaRepository)
     {
@@ -38,7 +38,7 @@ class PublicController
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function registerAssets()
     {

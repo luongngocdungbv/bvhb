@@ -24,7 +24,7 @@ class ActivateUserService
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @param $code
      * @param $username
      * @return bool|Exception

@@ -15,7 +15,7 @@ class RoleUpdateListener
 
     /**
      * RoleAssignmentListener constructor.
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @param UserInterface $userRepository
      */
     public function __construct(UserInterface $userRepository)
@@ -28,7 +28,7 @@ class RoleUpdateListener
      *
      * @param  RoleUpdateEvent $event
      * @return void
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Exception
      */
     public function handle(RoleUpdateEvent $event)

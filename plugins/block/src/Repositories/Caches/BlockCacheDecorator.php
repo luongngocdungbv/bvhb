@@ -22,7 +22,7 @@ class BlockCacheDecorator extends CacheAbstractDecorator implements BlockInterfa
      * BlockCacheDecorator constructor.
      * @param BlockInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(BlockInterface $repository, CacheInterface $cache)
     {
@@ -34,7 +34,7 @@ class BlockCacheDecorator extends CacheAbstractDecorator implements BlockInterfa
      * @param string $name
      * @param int $id
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function createSlug($name, $id)
     {

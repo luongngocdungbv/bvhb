@@ -23,7 +23,7 @@ class SlugController extends BaseController
      * SlugController constructor.
      * @param SlugInterface $slugRepository
      * @param SlugService $slugService
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(SlugInterface $slugRepository, SlugService $slugService)
     {

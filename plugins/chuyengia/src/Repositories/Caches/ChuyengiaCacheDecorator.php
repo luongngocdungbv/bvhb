@@ -22,7 +22,7 @@ class ChuyengiaCacheDecorator extends CacheAbstractDecorator implements Chuyengi
      * ChuyengiaCacheDecorator constructor.
      * @param ChuyengiaInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(ChuyengiaInterface $repository, CacheInterface $cache)
     {

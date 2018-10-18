@@ -33,7 +33,7 @@ class PublicController extends Controller
 
     /**
      * @return \Response
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function getOverview()
@@ -44,7 +44,7 @@ class PublicController extends Controller
 
     /**
      * @return \Response
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function getEditAccount()
@@ -57,7 +57,7 @@ class PublicController extends Controller
      * @param EditAccountRequest $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postEditAccount(EditAccountRequest $request, BaseHttpResponse $response)
     {
@@ -69,7 +69,7 @@ class PublicController extends Controller
 
     /**
      * @return \Response
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function getChangePassword()
@@ -82,7 +82,7 @@ class PublicController extends Controller
      * @param UpdatePasswordRequest $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postChangePassword(UpdatePasswordRequest $request, BaseHttpResponse $response)
     {
@@ -103,7 +103,7 @@ class PublicController extends Controller
 
     /**
      * @return \Response
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function getChangeProfileImage()
@@ -113,7 +113,7 @@ class PublicController extends Controller
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @param MemberChangeAvatarRequest $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse

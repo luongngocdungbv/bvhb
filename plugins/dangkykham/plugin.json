@@ -1,0 +1,9 @@
+{
+    "name": "Đăng ký khám Form",
+    "namespace": "Botble\\Dangkykham\\",
+    "provider": "Botble\\Dangkykham\\Providers\\DangkykhamServiceProvider",
+    "author": "DGL",
+    "url": "#",
+    "version": "2.7",
+    "description": "Đăng ký khám tại BVHB"
+}

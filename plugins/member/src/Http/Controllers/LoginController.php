@@ -44,7 +44,7 @@ class LoginController extends Controller
      * Create a new controller instance.
      *
      * @return void
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct()
     {
@@ -59,7 +59,7 @@ class LoginController extends Controller
      *
      * @return \Response
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function showLoginForm()
     {
@@ -72,7 +72,7 @@ class LoginController extends Controller
      * Get the guard to be used during authentication.
      *
      * @return \Illuminate\Contracts\Auth\StatefulGuard
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected function guard()
     {
@@ -84,7 +84,7 @@ class LoginController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * @throws \Illuminate\Validation\ValidationException
      * @throws \Illuminate\Validation\ValidationException
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function login(Request $request)
     {
@@ -117,7 +117,7 @@ class LoginController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return bool
      * @throws ValidationException
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected function attemptLogin(Request $request)
     {

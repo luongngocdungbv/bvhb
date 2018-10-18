@@ -22,7 +22,7 @@ class NoteCacheDecorator extends CacheAbstractDecorator implements NoteInterface
      * NoteCacheDecorator constructor.
      * @param NoteInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(NoteInterface $repository, CacheInterface $cache)
     {

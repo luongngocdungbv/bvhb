@@ -26,7 +26,7 @@ class DanhmucbvhbController extends BaseController
     /**
      * DanhmucbvhbController constructor.
      * @param DanhmucbvhbInterface $danhmucbvhbRepository
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(DanhmucbvhbInterface $danhmucbvhbRepository)
     {
@@ -37,7 +37,7 @@ class DanhmucbvhbController extends BaseController
      * Display all danhmucbvhbs
      * @param DanhmucbvhbTable $dataTable
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function getList(DanhmucbvhbTable $table)
@@ -51,7 +51,7 @@ class DanhmucbvhbController extends BaseController
     /**
      * @param FormBuilder $formBuilder
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getCreate(FormBuilder $formBuilder)
     {
@@ -65,7 +65,7 @@ class DanhmucbvhbController extends BaseController
      *
      * @param DanhmucbvhbRequest $request
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postCreate(DanhmucbvhbRequest $request, BaseHttpResponse $response)
     {
@@ -86,7 +86,7 @@ class DanhmucbvhbController extends BaseController
      * @param Request $request
      * @param FormBuilder $formBuilder
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getEdit($id, FormBuilder $formBuilder, Request $request)
     {
@@ -103,7 +103,7 @@ class DanhmucbvhbController extends BaseController
      * @param $id
      * @param DanhmucbvhbRequest $request
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postEdit($id, DanhmucbvhbRequest $request, BaseHttpResponse $response)
     {
@@ -124,7 +124,7 @@ class DanhmucbvhbController extends BaseController
      * @param $id
      * @param Request $request
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDelete(Request $request, $id, BaseHttpResponse $response)
     {
@@ -147,7 +147,7 @@ class DanhmucbvhbController extends BaseController
      * @param Request $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postDeleteMany(Request $request, BaseHttpResponse $response)
     {

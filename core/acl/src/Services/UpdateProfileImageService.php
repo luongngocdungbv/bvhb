@@ -28,7 +28,7 @@ class UpdateProfileImageService implements ProduceServiceInterface
     /**
      * @param Request $request
      * @return bool|\Exception
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function execute(Request $request)
     {

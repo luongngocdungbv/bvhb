@@ -16,7 +16,7 @@ class HookServiceProvider extends ServiceProvider
 
     /**
      * Boot the service provider.
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function boot()
@@ -29,7 +29,7 @@ class HookServiceProvider extends ServiceProvider
      * @param Collection $widget_settings
      * @return array
      * @throws \Throwable
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function addStatsWidgets($widgets, $widget_settings)
     {

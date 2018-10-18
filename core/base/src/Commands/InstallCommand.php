@@ -25,7 +25,7 @@ class InstallCommand extends Command
 
     /**
      * Execute the console command.
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @param SettingStore $settingStore
      * @return bool
      */

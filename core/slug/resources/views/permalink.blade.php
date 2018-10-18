@@ -1,7 +1,7 @@
 <div id="edit-slug-box" @if (empty($value) && !$errors->has($name)) class="hidden" @endif>
     <label class="control-label required" for="current-slug">{{ trans('core.base::forms.permalink') }}:</label>
     <span id="sample-permalink">
-        <a class="permalink" target="_blank" href="{{ str_replace('--slug--', $value, url($prefix . '/' . config('core.slug.general.pattern'))) }}">
+        <a class="permalink" target="_blank" href="{{ str_replace('--slug--', $value, url($prefix . '/' . config('core.slug.general.pattern'))) }}{{ $ending_url }}">
             <span class="default-slug">{{ url($prefix) }}/<span id="editable-post-name">{{ $value }}</span>{{ $ending_url }}</span>
         </a>
     </span>

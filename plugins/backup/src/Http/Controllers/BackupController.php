@@ -22,7 +22,7 @@ class BackupController extends BaseController
     /**
      * BackupController constructor.
      * @param Backup $backup
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(Backup $backup)
     {
@@ -31,7 +31,7 @@ class BackupController extends BaseController
 
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function getIndex()
@@ -48,7 +48,7 @@ class BackupController extends BaseController
      * @param Request $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function postCreate(Request $request, BaseHttpResponse $response)
@@ -72,7 +72,7 @@ class BackupController extends BaseController
      * @param string $folder
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDelete($folder, BaseHttpResponse $response)
     {
@@ -92,7 +92,7 @@ class BackupController extends BaseController
      * @param BaseHttpResponse $response
      * @param Kernel $kernel
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getRestore($folder, Request $request, BaseHttpResponse $response, Kernel $kernel)
     {
@@ -136,7 +136,7 @@ class BackupController extends BaseController
     /**
      * @param string $folder
      * @return \Symfony\Component\HttpFoundation\BinaryFileResponse|boolean
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDownloadDatabase($folder)
     {
@@ -152,7 +152,7 @@ class BackupController extends BaseController
     /**
      * @param string $folder
      * @return \Symfony\Component\HttpFoundation\BinaryFileResponse|boolean
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDownloadUploadFolder($folder)
     {

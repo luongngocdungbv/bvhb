@@ -16,7 +16,7 @@ class BlockRepository extends RepositoriesAbstract implements BlockInterface
      * @param string $name
      * @param int $id
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function createSlug($name, $id)
     {

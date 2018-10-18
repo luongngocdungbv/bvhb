@@ -5,7 +5,7 @@ use Botble\Menu\Repositories\Interfaces\MenuInterface;
 if (!function_exists('get_all_menus')) {
     /**
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     function get_all_menus()
     {

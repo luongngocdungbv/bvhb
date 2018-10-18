@@ -25,7 +25,7 @@ class DanhmucbvhbServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function register()
     {
@@ -43,7 +43,7 @@ class DanhmucbvhbServiceProvider extends ServiceProvider
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {
@@ -58,7 +58,7 @@ class DanhmucbvhbServiceProvider extends ServiceProvider
         $this->app->register(RouteServiceProvider::class);
         $this->app->register(HookServiceProvider::class);
 
-        Event::listen(SessionStarted::class, function () {
+       /* Event::listen(SessionStarted::class, function () {
             dashboard_menu()->registerItem([
                 'id' => 'cms-plugins-danhmucbvhb',
                 'priority' => 5,
@@ -68,7 +68,7 @@ class DanhmucbvhbServiceProvider extends ServiceProvider
                 'url' => route('danhmucbvhb.list'),
                 'permissions' => ['danhmucbvhb.list'],
             ]);
-        });
+        });*/
 
         if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
             Language::registerModule([DANHMUCBVHB_MODULE_SCREEN_NAME]);
@@ -81,4 +81,7 @@ class DanhmucbvhbServiceProvider extends ServiceProvider
             SeoHelper::registerModule([DANHMUCBVHB_MODULE_SCREEN_NAME]);
         });
     }
+
+    
+
 }

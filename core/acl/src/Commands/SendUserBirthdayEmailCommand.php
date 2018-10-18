@@ -36,7 +36,7 @@ class SendUserBirthdayEmailCommand extends Command
 
     /**
      * RebuildPermissions constructor.
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @param UserInterface $userRepository
      * @param EmailHandler $emailHandler
      */
@@ -49,7 +49,7 @@ class SendUserBirthdayEmailCommand extends Command
 
     /**
      * Execute the console command.
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function handle()

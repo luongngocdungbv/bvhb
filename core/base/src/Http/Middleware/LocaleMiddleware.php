@@ -15,7 +15,7 @@ class LocaleMiddleware
      * @param  \Illuminate\Http\Request $request
      * @param  \Closure $next
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Exception
      */
     public function handle($request, Closure $next)

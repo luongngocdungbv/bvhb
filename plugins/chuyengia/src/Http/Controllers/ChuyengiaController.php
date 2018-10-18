@@ -26,7 +26,7 @@ class ChuyengiaController extends BaseController
     /**
      * ChuyengiaController constructor.
      * @param ChuyengiaInterface $chuyengiaRepository
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(ChuyengiaInterface $chuyengiaRepository)
     {
@@ -37,7 +37,7 @@ class ChuyengiaController extends BaseController
      * Display all chuyengias
      * @param ChuyengiaTable $dataTable
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function getList(ChuyengiaTable $table)
@@ -51,7 +51,7 @@ class ChuyengiaController extends BaseController
     /**
      * @param FormBuilder $formBuilder
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getCreate(FormBuilder $formBuilder)
     {
@@ -65,7 +65,7 @@ class ChuyengiaController extends BaseController
      *
      * @param ChuyengiaRequest $request
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postCreate(ChuyengiaRequest $request, BaseHttpResponse $response)
     {
@@ -90,7 +90,7 @@ class ChuyengiaController extends BaseController
      * @param Request $request
      * @param FormBuilder $formBuilder
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getEdit($id, FormBuilder $formBuilder, Request $request)
     {
@@ -107,7 +107,7 @@ class ChuyengiaController extends BaseController
      * @param $id
      * @param ChuyengiaRequest $request
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postEdit($id, ChuyengiaRequest $request, BaseHttpResponse $response)
     {
@@ -129,7 +129,7 @@ class ChuyengiaController extends BaseController
      * @param $id
      * @param Request $request
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDelete(Request $request, $id, BaseHttpResponse $response)
     {
@@ -152,7 +152,7 @@ class ChuyengiaController extends BaseController
      * @param Request $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postDeleteMany(Request $request, BaseHttpResponse $response)
     {

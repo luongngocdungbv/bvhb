@@ -10,7 +10,7 @@ interface BlockInterface extends RepositoryInterface
      * @param string $name
      * @param int $id
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function createSlug($name, $id);
 }

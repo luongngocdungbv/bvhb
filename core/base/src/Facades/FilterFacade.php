@@ -14,7 +14,7 @@ class FilterFacade extends Facade
 
     /**
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @since 2.1
      */
     protected static function getFacadeAccessor()

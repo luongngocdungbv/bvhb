@@ -11,7 +11,7 @@ trait ViewExpressionTrait
      *
      * @param string $html
      * @return \Illuminate\Support\HtmlString|string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected function convertToViewExpression($html)
     {

@@ -13,7 +13,7 @@ class HookServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {
@@ -24,7 +24,7 @@ class HookServiceProvider extends ServiceProvider
     /**
      * @param \stdClass $shortcode
      * @return null
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function render($shortcode)
     {

@@ -8,7 +8,7 @@ class TableBuilderFacade extends Facade
 {
     /**
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected static function getFacadeAccessor()
     {

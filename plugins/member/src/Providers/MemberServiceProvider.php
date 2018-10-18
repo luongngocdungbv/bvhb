@@ -26,7 +26,7 @@ class MemberServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function register()
     {
@@ -68,7 +68,7 @@ class MemberServiceProvider extends ServiceProvider
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {

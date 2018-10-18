@@ -2,8 +2,8 @@
   "name": "Member",
   "namespace": "Botble\\Member\\",
   "provider": "Botble\\Member\\Providers\\MemberServiceProvider",
-  "author": "Sang Nguyen",
-  "url": "http://sangnguyen.info",
+  "author": "DGL Custom",
+  "url": "https://facebook.com/nhoanhkhoquen",
   "version": "2.7",
   "description": "Manage member, user register/login"
 }

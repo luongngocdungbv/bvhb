@@ -58,7 +58,7 @@ class Breadcrumb
      * Render breadcrumbs.
      *
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function render()

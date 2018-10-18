@@ -1,9 +1,9 @@
 {
-    "name": "Chuyengia",
+    "name": "Plugin Chuyên gia",
     "namespace": "Botble\\Chuyengia\\",
     "provider": "Botble\\Chuyengia\\Providers\\ChuyengiaServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL",
+    "url": "#",
     "version": "1.0",
-    "description": "The description for plugin chuyengia"
+    "description": "Chuyên gia BVDK Hòa Bình"
 }

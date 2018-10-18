@@ -22,7 +22,7 @@ class MemberCacheDecorator extends CacheAbstractDecorator implements MemberInter
      * MemberCacheDecorator constructor.
      * @param MemberInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(MemberInterface $repository, CacheInterface $cache)
     {

@@ -8,14 +8,14 @@ use Botble\Base\Interfaces\PluginInterface;
 class Plugin implements PluginInterface
 {
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public static function activate()
     {
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public static function deactivate()
     {
@@ -23,7 +23,7 @@ class Plugin implements PluginInterface
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public static function remove()
     {

@@ -37,7 +37,7 @@ class DanhmucbvhbTable extends TableAbstract
      * Display ajax response.
      *
      * @return \Illuminate\Http\JsonResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @since 2.1
      */
     public function ajax()
@@ -72,7 +72,7 @@ class DanhmucbvhbTable extends TableAbstract
      * Get the query object to be processed by table.
      *
      * @return \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @since 2.1
      */
     public function query()
@@ -84,7 +84,7 @@ class DanhmucbvhbTable extends TableAbstract
 
     /**
      * @return array
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @since 2.1
      */
     public function columns()
@@ -120,7 +120,7 @@ class DanhmucbvhbTable extends TableAbstract
 
     /**
      * @return array
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @since 2.1
      * @throws \Throwable
      */
@@ -194,5 +194,13 @@ class DanhmucbvhbTable extends TableAbstract
     public function getNames()
     {
         return $this->repository->pluck('danhmucbvhbs.name', 'danhmucbvhbs.id');
+    }
+    public function getDefaultButtons(){
+        return [
+            
+            'export',
+            'print',
+            'reset',
+        ];
     }
 }

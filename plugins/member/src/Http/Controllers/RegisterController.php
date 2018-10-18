@@ -46,7 +46,7 @@ class RegisterController extends Controller
      * Create a new controller instance.
      *
      * @param MemberInterface $memberRepository
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(MemberInterface $memberRepository)
     {
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      *
      * @param  array $data
      * @return \Illuminate\Contracts\Validation\Validator
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected function validator(array $data)
     {
@@ -75,7 +75,7 @@ class RegisterController extends Controller
      *
      * @param  array $data
      * @return Member
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected function create(array $data)
     {
@@ -91,7 +91,7 @@ class RegisterController extends Controller
      *
      * @return \Response
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function showRegistrationForm()
     {
@@ -104,7 +104,7 @@ class RegisterController extends Controller
      * Get the guard to be used during registration.
      *
      * @return \Illuminate\Contracts\Auth\StatefulGuard
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected function guard()
     {
@@ -119,7 +119,7 @@ class RegisterController extends Controller
      * @param BaseHttpResponse $response
      * @param MemberInterface $memberRepository
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function confirm($email, Request $request, BaseHttpResponse $response, MemberInterface $memberRepository)
     {
@@ -150,7 +150,7 @@ class RegisterController extends Controller
      * @param MemberInterface $memberRepository
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function resendConfirmation(Request $request, MemberInterface $memberRepository, BaseHttpResponse $response)
     {
@@ -169,7 +169,7 @@ class RegisterController extends Controller
      * @param \Illuminate\Http\Request $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function register(Request $request, BaseHttpResponse $response)
     {
@@ -194,7 +194,7 @@ class RegisterController extends Controller
      * Send the confirmation code to a user.
      *
      * @param Member $member
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected function sendConfirmationToUser($member)
     {

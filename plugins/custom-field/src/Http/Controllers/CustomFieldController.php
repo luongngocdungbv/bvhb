@@ -37,7 +37,7 @@ class CustomFieldController extends BaseController
     /**
      * @param FieldGroupInterface $fieldGroupRepository
      * @param FieldItemInterface $fieldItemRepository
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(FieldGroupInterface $fieldGroupRepository, FieldItemInterface $fieldItemRepository)
     {
@@ -48,7 +48,7 @@ class CustomFieldController extends BaseController
     /**
      * @param CustomFieldTable $dataTable
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function getList(CustomFieldTable $dataTable)
@@ -64,7 +64,7 @@ class CustomFieldController extends BaseController
     /**
      * @param FormBuilder $formBuilder
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function getCreate(FormBuilder $formBuilder)
@@ -86,7 +86,7 @@ class CustomFieldController extends BaseController
      * @param CreateCustomFieldAction $action
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postCreate(
         CreateFieldGroupRequest $request,
@@ -114,7 +114,7 @@ class CustomFieldController extends BaseController
      * @param $id
      * @param FormBuilder $formBuilder
      * @return string
-     * @author Sang Nguyen, Tedozi Manson
+     * @author DGL Custom, Tedozi Manson
      * @throws \Throwable
      */
     public function getEdit($id, FormBuilder $formBuilder)
@@ -141,7 +141,7 @@ class CustomFieldController extends BaseController
      * @param UpdateCustomFieldAction $action
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen, Tedozi Manson
+     * @author DGL Custom, Tedozi Manson
      */
     public function postEdit(
         $id,
@@ -171,7 +171,7 @@ class CustomFieldController extends BaseController
      * @param BaseHttpResponse $response
      * @param DeleteCustomFieldAction $action
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDelete($id, BaseHttpResponse $response, DeleteCustomFieldAction $action)
     {
@@ -190,7 +190,7 @@ class CustomFieldController extends BaseController
      * @param BaseHttpResponse $response
      * @param DeleteCustomFieldAction $action
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postDeleteMany(Request $request, BaseHttpResponse $response, DeleteCustomFieldAction $action)
     {

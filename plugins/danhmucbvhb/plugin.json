@@ -1,9 +1,9 @@
 {
-    "name": "Danhmucbvhb",
+    "name": "Danh mục BVHB",
     "namespace": "Botble\\Danhmucbvhb\\",
     "provider": "Botble\\Danhmucbvhb\\Providers\\DanhmucbvhbServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL",
+    "url": "#",
     "version": "1.0",
-    "description": "The description for plugin danhmucbvhb"
+    "description": "Danh mục bệnh viện đa khoa Hòa bình"
 }

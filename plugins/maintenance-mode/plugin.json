@@ -2,8 +2,8 @@
     "name": "MaintenanceMode",
     "namespace": "Botble\\MaintenanceMode\\",
     "provider": "Botble\\MaintenanceMode\\Providers\\MaintenanceModeServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
     "version": "1.0",
     "description": "The description for plugin maintenance_mode"
 }

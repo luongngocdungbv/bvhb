@@ -30,7 +30,7 @@ class PublicController
     /**
      * PublicController constructor.
      * @param {plugin}Interface ${plugin}Repository
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct({Plugin}Interface ${plugin}Repository)
     {
@@ -38,7 +38,7 @@ class PublicController
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function registerAssets()
     {

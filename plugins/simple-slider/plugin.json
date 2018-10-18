@@ -2,8 +2,8 @@
   "name": "Simple Slider",
   "namespace": "Botble\\SimpleSlider\\",
   "provider": "Botble\\SimpleSlider\\Providers\\SimpleSliderServiceProvider",
-  "author": "Sang Nguyen",
-  "url": "http://sangnguyen.info",
+  "author": "DGL Custom",
+  "url": "https://facebook.com/nhoanhkhoquen",
   "version": "1.3",
   "description": "A plugin to create sliders"
 }

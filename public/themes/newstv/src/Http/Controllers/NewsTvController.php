@@ -8,7 +8,7 @@ class NewsTvController extends Controller
 {
     /**
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getTest()
     {

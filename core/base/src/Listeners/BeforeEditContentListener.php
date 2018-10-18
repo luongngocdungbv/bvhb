@@ -13,7 +13,7 @@ class BeforeEditContentListener
      *
      * @param BeforeEditContentEvent $event
      * @return void
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function handle(BeforeEditContentEvent $event)
     {

@@ -27,7 +27,7 @@ class BlockController extends BaseController
     /**
      * BlockController constructor.
      * @param BlockInterface $blockRepository
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(BlockInterface $blockRepository)
     {
@@ -38,7 +38,7 @@ class BlockController extends BaseController
      * Display all block
      * @param BlockTable $dataTable
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     * @author Sang Nguyen
+     * @author DGL Custom
      * @throws \Throwable
      */
     public function getList(BlockTable $dataTable)
@@ -52,7 +52,7 @@ class BlockController extends BaseController
      * Show create form
      * @param FormBuilder $formBuilder
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getCreate(FormBuilder $formBuilder)
     {
@@ -66,7 +66,7 @@ class BlockController extends BaseController
      *
      * @param BlockRequest $request
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postCreate(BlockRequest $request, BaseHttpResponse $response)
     {
@@ -92,7 +92,7 @@ class BlockController extends BaseController
      * @param FormBuilder $formBuilder
      * @param Request $request
      * @return string
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getEdit($id, FormBuilder $formBuilder, Request $request)
     {
@@ -109,7 +109,7 @@ class BlockController extends BaseController
      * @param int $id
      * @param BlockRequest $request
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postEdit($id, BlockRequest $request, BaseHttpResponse $response)
     {
@@ -130,7 +130,7 @@ class BlockController extends BaseController
      * @param int $id
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDelete(Request $request, $id, BaseHttpResponse $response)
     {
@@ -151,7 +151,7 @@ class BlockController extends BaseController
      * @param Request $request
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postDeleteMany(Request $request, BaseHttpResponse $response)
     {

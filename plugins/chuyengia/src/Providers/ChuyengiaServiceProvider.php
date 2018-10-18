@@ -26,7 +26,7 @@ class ChuyengiaServiceProvider extends ServiceProvider
     protected $app;
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function register()
     {
@@ -44,7 +44,7 @@ class ChuyengiaServiceProvider extends ServiceProvider
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function boot()
     {
@@ -59,7 +59,7 @@ class ChuyengiaServiceProvider extends ServiceProvider
         $this->app->register(RouteServiceProvider::class);
         $this->app->register(HookServiceProvider::class);
 
-        Event::listen(SessionStarted::class, function () {
+        /*Event::listen(SessionStarted::class, function () {
             dashboard_menu()->registerItem([
                 'id' => 'cms-plugins-chuyengia',
                 'priority' => 5,
@@ -69,7 +69,59 @@ class ChuyengiaServiceProvider extends ServiceProvider
                 'url' => route('chuyengia.list'),
                 'permissions' => ['chuyengia.list'],
             ]);
+        });*/
+
+
+            Event::listen(SessionStarted::class, function () {
+            dashboard_menu()->registerItem([
+                'id' => 'cms-plugins-chuyengia',
+                'priority' => 5,
+                'parent_id' => null,
+                'name' => 'Dịch Vụ Viện',
+                'icon' => 'fas fa-briefcase-medical',
+                'url' => route('chuyengia.list'),
+                'permissions' => ['chuyengia.list'],
+            ])
+                ->registerItem([
+                    'id' => 'cms-plugins-chuyengia1',
+                    'priority' => 5,
+                    'parent_id' => 'cms-plugins-chuyengia',
+                    'name' => trans('plugins.chuyengia::chuyengia.name'),
+                    'url' => route('chuyengia.list'),
+                    'permissions' => ['chuyengia.list'],
+                ])
+                ->registerItem([
+                   'id' => 'cms-plugins-dangkykham',
+                    'priority' => 120,
+                    'parent_id' => 'cms-plugins-chuyengia',
+                    'name' => trans('plugins.dangkykham::dangkykham.menu'),
+                    'icon' => 'fas fa-briefcase-medical',
+                    'url' => route('dangkykhams.list'),
+                    'permissions' => ['dangkykhams.list'],
+                ])
+                ->registerItem([
+                    'id' => 'cms-plugins-danhmucbvhb',
+                    'priority' => 5,
+                    'parent_id' => 'cms-plugins-chuyengia',
+                    'name' => trans('plugins.danhmucbvhb::danhmucbvhb.name'),
+                    'url' => route('danhmucbvhb.list'),
+                    'permissions' => ['danhmucbvhb.list'],
+                ])
+                 ->registerItem([
+                    'id' => 'cms-plugins-dangkylaymau',
+                    'priority' => 120,
+                    'parent_id' => 'cms-plugins-chuyengia',
+                    'name' => trans('plugins.dangkylaymau::dangkylaymau.menu'),
+                    'icon' => 'fas fa-heartbeat',
+                    'url' => route('dangkylaymaus.list'),
+                    'permissions' => ['dangkylaymaus.list'],
+                ]);
+
+                
         });
+
+
+
 
         if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
             Language::registerModule([CHUYENGIA_MODULE_SCREEN_NAME]);

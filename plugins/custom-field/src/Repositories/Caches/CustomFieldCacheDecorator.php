@@ -22,7 +22,7 @@ class CustomFieldCacheDecorator extends CacheAbstractDecorator implements Custom
      * CustomFieldCacheDecorator constructor.
      * @param CustomFieldInterface $repository
      * @param CacheInterface $cache
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function __construct(CustomFieldInterface $repository, CacheInterface $cache)
     {

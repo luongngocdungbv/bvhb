@@ -36,4 +36,5 @@ class Danhmucbvhb extends Eloquent
     ];
 
     protected $screen = DANHMUCBVHB_MODULE_SCREEN_NAME;
+    
 }

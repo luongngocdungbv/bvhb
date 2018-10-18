@@ -35,7 +35,7 @@ class SocialLoginController extends BaseController
      *
      * @param $provider
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function redirectToProvider($provider)
     {
@@ -47,7 +47,7 @@ class SocialLoginController extends BaseController
      * @param $provider
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function handleProviderCallback($provider, BaseHttpResponse $response)
     {
@@ -85,7 +85,7 @@ class SocialLoginController extends BaseController
 
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getSettings()
     {
@@ -101,7 +101,7 @@ class SocialLoginController extends BaseController
      * @param BaseHttpResponse $response
      * @param SettingStore $setting
      * @return BaseHttpResponse
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function postSettings(SocialLoginRequest $request, BaseHttpResponse $response, SettingStore $setting)
     {

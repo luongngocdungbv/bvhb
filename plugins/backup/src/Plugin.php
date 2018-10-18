@@ -9,7 +9,7 @@ class Plugin implements PluginInterface
 {
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public static function activate()
     {
@@ -17,14 +17,14 @@ class Plugin implements PluginInterface
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public static function deactivate()
     {
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public static function remove()
     {

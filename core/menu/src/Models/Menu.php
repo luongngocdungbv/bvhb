@@ -16,7 +16,7 @@ class Menu extends Eloquent
 
     /**
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function menuNodes()
     {
@@ -24,7 +24,7 @@ class Menu extends Eloquent
     }
 
     /**
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     protected static function boot()
     {

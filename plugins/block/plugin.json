@@ -2,8 +2,8 @@
     "name": "Block",
     "namespace": "Botble\\Block\\",
     "provider": "Botble\\Block\\Providers\\BlockServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
     "version": "2.6",
     "description": "Manage static block (HTML, Text) on your theme"
 }

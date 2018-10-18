@@ -2,8 +2,8 @@
     "name": "SocialLogin",
     "namespace": "Botble\\SocialLogin\\",
     "provider": "Botble\\SocialLogin\\Providers\\SocialLoginServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
     "version": "1.2",
     "description": "Social login for Botble CMS"
 }

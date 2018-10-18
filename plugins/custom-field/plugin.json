@@ -2,8 +2,8 @@
     "name": "Custom Fields",
     "namespace": "Botble\\CustomField\\",
     "provider": "Botble\\CustomField\\Providers\\CustomFieldServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
     "version": "2.7",
     "description": "Custom Fields"
 }

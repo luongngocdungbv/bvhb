@@ -2,8 +2,8 @@
     "name": "Language",
     "namespace": "Botble\\Language\\",
     "provider": "Botble\\Language\\Providers\\LanguageServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "author": "DGL Custom",
+    "url": "https://facebook.com/nhoanhkhoquen",
     "version": "2.6",
     "description": "Multilingual for Botble CMS"
 }

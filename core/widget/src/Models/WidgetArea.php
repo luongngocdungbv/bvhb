@@ -23,7 +23,7 @@ class WidgetArea extends Eloquent
 
     /**
      * @param $value
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function setDataAttribute($value)
     {
@@ -33,7 +33,7 @@ class WidgetArea extends Eloquent
     /**
      * @param $value
      * @return mixed
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function getDataAttribute($value)
     {

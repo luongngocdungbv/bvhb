@@ -14,7 +14,7 @@ class CreatedContentListener
      *
      * @param CreatedContentEvent $event
      * @return void
-     * @author Sang Nguyen
+     * @author DGL Custom
      */
     public function handle(CreatedContentEvent $event)
     {
