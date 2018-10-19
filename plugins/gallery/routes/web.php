@@ -42,12 +42,12 @@ Route::group(['namespace' => 'Botble\Gallery\Http\Controllers', 'middleware' => 
     });
 
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
-        Route::get('/galleries', [
+        Route::get('/hoat-dong', [
             'as' => 'public.galleries',
             'uses' => 'PublicController@getGalleries',
         ]);
 
-        Route::get('/gallery/{slug}', [
+        Route::get('/hoat-dong/{slug}', [
             'as' => 'public.gallery',
             'uses' => 'PublicController@getGallery',
         ]);

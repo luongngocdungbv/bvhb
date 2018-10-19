@@ -19,12 +19,13 @@ class InsertDNSPrefetch extends PageSpeed
 
         $dnsPrefetch = collect($match[0])->map(function ($item) {
             $domain = (new TrimUrls)->apply($item[0]);
+
             $domain = explode(
                 '/',
                 str_replace('//', '', $domain)
             );
 
-            return '<link rel="dns-prefetch" href="//' . $domain[0] . '">';
+            //return '<link rel="dns-prefetch" href="//' . $domain[0] . '">';
         })->unique()->implode("\n");
 
         $replace = [

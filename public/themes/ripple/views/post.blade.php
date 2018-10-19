@@ -35,6 +35,24 @@
                             <div class="post__social"></div>
                         </header>
                         <div class="post__content">
+                            @if ($post->format_type == 'video')
+
+                                @php $url = str_replace('watch?v=', 'embed/', get_meta_data($post->id, 'video_link', POST_MODULE_SCREEN_NAME, true)); @endphp
+
+                                @if (!empty($url))
+
+                                    <div class="embed-responsive embed-responsive-16by9 mb30">
+
+                                        <iframe class="embed-responsive-item" allowfullscreen frameborder="0" height="315" width="420" src="{{ str_replace('watch?v=', 'embed/', $url) }}"></iframe>
+
+                                    </div>
+
+                                    <br>
+
+                                @endif
+
+                            @endif
+
                             @if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($post->id, POST_MODULE_SCREEN_NAME)))
                                 {!! render_object_gallery($galleries, ($post->categories()->first() ? $post->categories()->first()->name : __('Uncategorized'))) !!}
                             @endif

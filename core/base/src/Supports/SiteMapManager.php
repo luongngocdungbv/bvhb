@@ -24,7 +24,7 @@ class SiteMapManager
         // by default cache is disabled
         $this->site_map->setCache('public.sitemap', config('core.base.general.cache_site_map'));
 
-        $this->site_map->add(route('public.index'), '2016-10-20 10:00', '1.0', 'daily');
+        $this->site_map->add(route('public.index'), '2017-10-16 10:00', '1 .0', 'daily');
 
         AdminBar::setIsDisplay(false);
     }

@@ -3348,10 +3348,30 @@ html .bg-parallax {
   top: 0;
   left: 0;
   opacity: 0.9;
-  background-color: #225c95;
+  background-color: #e4e4e4;
 }
 footer p.person-info__description{
   color: #ffffff;
+}
+footer header.person-info h3.person-info__title {
+    color: #333333;
+    font-size: 16px;
+}
+footer .widget__about .person-detail p {
+    font-weight: bold;
+    color: #333333;
+}
+footer .widget__about .person-detail p a{
+    color: #333333;
+    font-weight: bold;
+}
+footer .widget__content ul li a{
+    color: #333333;
+    font-weight: bold;
+}
+footer .widget__footer h3.widget__title{
+    color: #333333;
+    font-weight: bold;
 }
 body[dir=rtl] .widget--transparent .widget__header:after,
 body[dir=rtl] .post-group .post-group__title:after {
@@ -4187,4 +4207,7 @@ body[dir=rtl] .widget__about .person-detail i {
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+.pagination_css{
+  text-align: center;
 }

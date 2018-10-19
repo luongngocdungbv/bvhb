@@ -109,7 +109,7 @@
         @if (is_plugin_active('blog'))
             <div class="super-search hide">
                 <form class="quick-search" action="{{ route('public.search') }}">
-                    <input type="text" name="q" placeholder="{{ __('Type to search...') }}" class="form-control search-input" autocomplete="off">
+                    <input type="text" name="q" placeholder="{{ __('Gõ từ khóa để tìm kiếm...') }}" class="form-control search-input" autocomplete="off">
                     <span class="close-search">&times;</span>
                 </form>
                 <div class="search-result"></div>
