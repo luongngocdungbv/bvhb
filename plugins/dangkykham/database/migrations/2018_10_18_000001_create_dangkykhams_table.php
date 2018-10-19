@@ -14,7 +14,9 @@ class CreateDangkykhamsTable extends Migration
         Schema::create('dangkykhams', function ($table) {
             $table->increments('id');
             $table->string('name', 60);
-            $table->string('email', 60);
+            /*$table->string('email', 60);*/
+            $table->string('chonkhoa', 255);
+            $table->string('ngaysinh', 60);
             $table->string('phone', 60)->nullable();
             $table->string('address', 120)->nullable();
             $table->text('content');

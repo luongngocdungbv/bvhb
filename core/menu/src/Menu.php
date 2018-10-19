@@ -124,6 +124,7 @@ class Menu
                     'menu_nodes.related_id',
                     'menu_nodes.icon_font',
                     'menu_nodes.css_class',
+                    'menu_nodes.image',
                     'menu_nodes.target',
                     'menu_nodes.url',
                     'menu_nodes.title',
@@ -268,6 +269,7 @@ class Menu
         $item->title = array_get($menu_item, 'title');
         $item->url = array_get($menu_item, 'customUrl');
         $item->css_class = array_get($menu_item, 'class');
+        $item->image = array_get($menu_item, 'image');
         $item->position = array_get($menu_item, 'position');
         $item->icon_font = array_get($menu_item, 'iconFont');
         $item->target = array_get($menu_item, 'target');

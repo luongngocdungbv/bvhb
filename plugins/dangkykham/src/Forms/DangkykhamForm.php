@@ -18,7 +18,7 @@ class DangkykhamForm extends FormAbstract
             ->setModuleName(DANGKYKHAM_MODULE_SCREEN_NAME)
             ->setValidatorClass(EditDangkykhamRequest::class)
             ->add('is_read', 'checkbox', [
-                'label' => trans('plugins.Dangkykham::Dangkykham.form.is_read'),
+                'label' => trans('plugins.dangkykham::dangkykham.form.is_read'),
                 'label_attr' => ['class' => 'control-label'],
                 'attr' => [
                     'class' => 'hrv-checkbox',
@@ -29,8 +29,8 @@ class DangkykhamForm extends FormAbstract
             ->setBreakFieldPoint('is_read')
             ->addMetaBoxes([
                 'information' => [
-                    'title' => trans('plugins.Dangkykham::Dangkykham.Dangkykham_information'),
-                    'content' => view('plugins.Dangkykham::Dangkykham-info', ['Dangkykham' => $this->getModel()])->render(),
+                    'title' => trans('plugins.dangkykham::dangkykham.dangkykham_information'),
+                    'content' => view('plugins.dangkykham::dangkykham-info', ['dangkykham' => $this->getModel()])->render(),
                     'attributes' => [
                         'style' => 'margin-top: 0',
                     ],

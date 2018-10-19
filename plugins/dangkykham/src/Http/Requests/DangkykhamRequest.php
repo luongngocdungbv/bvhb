@@ -19,12 +19,16 @@ class DangkykhamRequest extends Request
             return [
                 'name' => 'required',
                 'email' => 'required|email',
+                'chonkhoa' => 'required',
+                'ngaysinh' => 'required',
                 'content' => 'required',
                 'g-recaptcha-response' => 'required|captcha',
             ];
         }
         return [
             'name' => 'required',
+            'chonkhoa' => 'required',
+            'ngaysinh' => 'required',
             'email' => 'required|email',
             'content' => 'required',
         ];
@@ -38,6 +42,8 @@ class DangkykhamRequest extends Request
     {
         return [
             'name.required' => trans('plugins.dangkykham::dangkykham.name.required'),
+            'ngaysinh.required' => 'Chưa nhập ngày sinh',
+            'chonkhoa.required' => 'Chưa chọn chuyên khoa',
             'email.required' => trans('plugins.dangkykham::dangkykham.email.required'),
             'email.email' => trans('plugins.dangkykham::dangkykham.email.email'),
             'content.required' => trans('plugins.dangkykham::dangkykham.content.required'),

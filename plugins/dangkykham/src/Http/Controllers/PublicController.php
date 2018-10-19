@@ -52,6 +52,8 @@ class PublicController extends Controller
                     ->setVariableValues([
                         'dangkykham_name' => $dangkykham->name,
                         'dangkykham_subject' => $dangkykham->subject,
+                        'dangkykham_ngaysinh' => $dangkykham->ngaysinh,
+                        'dangkykham_chonkhoa' => $dangkykham->chonkhoa,
                         'dangkykham_email' => $dangkykham->email,
                         'dangkykham_phone' => $dangkykham->phone,
                         'dangkykham_address' => $dangkykham->address,

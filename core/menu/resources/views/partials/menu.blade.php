@@ -3,7 +3,7 @@
         <li class="dd-item dd3-item @if ($row->related_id > 0) post-item @endif" data-type="{{ $row->type }}"
             data-related-id="{{ $row->related_id }}" data-title="{{ $row->getRelated()->name }}"
             data-class="{{ $row->css_class }}" data-id="{{ $row->id }}" data-custom-url="{{ $row->url }}"
-            data-icon-font="{{ $row->icon_font }}" data-target="{{ $row->target }}">
+            data-icon-font="{{ $row->icon_font }}" data-target="{{ $row->target }}" data-image="{{ $row->image }}">
             <div class="dd-handle dd3-handle"></div>
             <div class="dd3-content">
                 <span class="text float-left" data-update="title">{{ $row->getRelated()->name }}</span>
@@ -23,6 +23,11 @@
                         <input type="text" name="custom-url" value="{{ $row->url }}" data-old="{{ $row->url }}">
                     </label>
                 @endif
+
+                <label class="pad-bot-5">
+                    <span class="text pad-top-5 dis-inline-block">{{ trans('core.menu::menu.image') }}</span>
+                    <input type="text" name="image" value="{{ $row->image }}" data-old="{{ $row->image }}">
+                </label>
                 <label class="pad-bot-5 dis-inline-block">
                     <span class="text pad-top-5" data-update="icon-font">{{ trans('core.menu::menu.icon') }}</span>
                     <input type="text" name="icon-font" value="{{ $row->icon_font }}" data-old="{{ $row->icon_font }}">

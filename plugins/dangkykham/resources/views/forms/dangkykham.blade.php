@@ -37,7 +37,14 @@
                    placeholder="{{ trans('plugins.dangkykham::dangkykham.form_email') }}">
         </div>
     </div>
-    <div class="col-md-6 col-sm-12 col-12">
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="dangkykham_ngaysinh" class="control-label required">{{ trans('plugins.dangkykham::dangkykham.form_ngaysinh') }}</label>
+            <input type="date" class="form-control" name="ngaysinh" value="{{ old('ngaysinh') }}" id="dangkykham_ngaysinh"
+                   placeholder="NGÀY/THÁNG/NĂM">
+        </div>
+    </div>
+    <div class="col-md-8 col-sm-12 col-12">
         <div class="form-group">
             <label for="dangkykham_address" class="control-label">{{ trans('plugins.dangkykham::dangkykham.form_address') }}</label>
             <input type="text" class="form-control" name="address" value="{{ old('address') }}" id="dangkykham_address"
@@ -58,6 +65,24 @@
                    placeholder="{{ trans('plugins.dangkykham::dangkykham.form_subject') }}">
         </div>
     </div>
+     <div class="col-md-7 col-sm-12 col-xs-12">
+        <div class="form-group">
+            <label for="dangkykham_chonkhoa" class="control-label required">{{ trans('plugins.dangkykham::dangkykham.form_chonkhoa') }}</label>
+            <select name="chonkhoa" class="wpcf7-form-control wpcf7-select form-control" aria-invalid="false" id="dangkykham_chonkhoa">
+                <option value="KHOA CẤP CỨU – HỒI SỨC TÍCH CỰC">KHOA CẤP CỨU – HỒI SỨC TÍCH CỰC</option>
+                <option value="KHOA KHÁM BỆNH">KHOA KHÁM BỆNH</option>
+                <option value="KHOA CHẨN ĐOÁN HÌNH ẢNH">KHOA CHẨN ĐOÁN HÌNH ẢNH</option>
+                <option value="KHOA XÉT NGHIỆM">KHOA XÉT NGHIỆM</option>
+                <option value="KHOA NỘI TỔNG HỢP">KHOA NỘI TỔNG HỢP</option>
+                <option value="KHOA NGOẠI – GÂY MÊ HỒI SỨC">KHOA NGOẠI – GÂY MÊ HỒI SỨC</option>
+                <option value="KHOA PHỤ SẢN">KHOA PHỤ SẢN</option>
+                <option value="KHOA NỘI SOI TIÊU HOÁ">KHOA NỘI - NHI</option>
+                <option value="KHOA LIÊN CHUYÊN KHOA">KHOA LIÊN CHUYÊN KHOA</option>
+                <option value="TRẺ TỰ KỶ">TRẺ TỰ KỶ</option>
+                <option value="KHÁM TUYẾN">KHÁM TUYẾN</option>
+            </select>
+        </div>
+    </div>
     <div class="col-md-12">
         <div class="form-group">
             <label for="dangkykham_content" class="control-label required">{{ trans('plugins.dangkykham::dangkykham.form_message') }}</label>
@@ -74,7 +99,7 @@
         </div>
     @endif
     <div class="col-md-12">
-        <div class="form-group"><p>{!! trans('plugins.dangkykham::dangkykham.required_field') !!}</p></div>
+        <div class="form-group"><p>{!! trans('plugins.dangkykham::dangkykham.content11') !!}</p></div>
     </div>
 </div>
 <div class="form-group text-right">

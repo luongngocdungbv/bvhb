@@ -2,6 +2,8 @@
 
 <p>Subject: <strong>{{ dangkykham_subject }}</strong></p>
 <p>Name: <strong>{{ dangkykham_name }}</strong></p>
+<p>Birthday: <strong>{{ dangkykham_ngaysinh }}</strong></p>
+<p>Type: <strong>{{ dangkykham_chonkhoa }}</strong></p>
 <p>Email: {{ dangkykham_email }}<p>
 <p>Address: {{ dangkykham_address }}<p>
 <p>Phone: {{ dangkykham_phone }}<p>

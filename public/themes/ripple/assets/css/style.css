@@ -1153,8 +1153,23 @@ ul, ol {
   .post__inside {
     margin-bottom: 30px;
   }
-}
+  .gallery-wrap .gallery-item {
+    width: 100% !important;
+    margin-right: 0.8%;
+    float: left;
+    max-height: 250px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+  }
 
+  .mask {
+      width: 143px !important;
+  }
+  .light_custom { 
+      width: 143px !important;
+  }
+}
 .post__inside--feature .post__header {
   background-color: transparent;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(75%, rgba(0, 0, 0, 0.7)));
@@ -2387,7 +2402,7 @@ ul, ol {
   position: relative;
   padding: 20px 0 5px;
   text-align: left;
-  background: #000000;
+  background: #255c95;
 }
 
 .page-footer__bottom .page-footer__social {
@@ -2415,7 +2430,7 @@ ul, ol {
   margin-bottom: 0;
   font-family: "Noto Sans", sans-serif;
   font-size: 13px;
-  color: #666666;
+  color: #ffffff;
   letter-spacing: 0;
   line-height: 1.5em;
 }
@@ -3333,7 +3348,10 @@ html .bg-parallax {
   top: 0;
   left: 0;
   opacity: 0.9;
-  background-color: #000000;
+  background-color: #225c95;
+}
+footer p.person-info__description{
+  color: #ffffff;
 }
 body[dir=rtl] .widget--transparent .widget__header:after,
 body[dir=rtl] .post-group .post-group__title:after {
@@ -3849,6 +3867,7 @@ body[dir=rtl] .widget__about .person-detail i {
   .header .header-wrap {
     display: none;
   }
+
 }
 
 .header .header-wrap .nav-top ul {
@@ -4084,4 +4103,88 @@ body[dir=rtl] .widget__about .person-detail i {
   z-index: 10;
   position: absolute;
   z-index: 0;
+}
+.img-wrap_custom{
+    position: relative;
+    z-index: 1;
+}
+.gallery-text{
+    font-family: "Times New Roman";
+    position: absolute;
+    z-index: 2;
+    color: #666666;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    text-align: center;
+}
+
+.gallery-text h3{
+    text-transform: uppercase;
+    padding:10px;
+    z-index: 9;
+    font-weight:bold;
+    color:#ffffff;
+    border: 2px solid transparent;
+    -webkit-border-image: url(https://benhvienhoabinh.vn/themes/ripple/assets/images/line-h1.png) 10 0 10 0 stretch;
+    -o-border-image: url(https://benhvienhoabinh.vn/themes/ripple/assets/images/line-h1.png) 10 0 10 0 stretch;
+    border-image: url(https://benhvienhoabinh.vn/themes/ripple/assets/images/line-h1.png) 10 0 10 0 stretch;
+}
+.gallery-text a:hover .mask{
+    opacity: 0.65;
+}
+.gallery-text a:hover h3{
+    color:#ffffff;
+    font-weight:bold;
+
+}
+.mask {
+    background: #0b7080;
+}
+.light_custom {
+    background: #1799ad;
+}
+.mask {
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    cursor: pointer;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    opacity: 1;
+    visibility: visible;
+    -moz-transform: scale(4);
+    -webkit-transform: scale(4);
+    -o-transform: scale(4);
+    -ms-transform: scale(4);
+    transform: scale(4);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.light_custom {
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    cursor: pointer;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    opacity: 1;
+    visibility: visible;
+    -moz-transform: scale(4);
+    -webkit-transform: scale(4);
+    -o-transform: scale(4);
+    -ms-transform: scale(4);
+    transform: scale(4);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }

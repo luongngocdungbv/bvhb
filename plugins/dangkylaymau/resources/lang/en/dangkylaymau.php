@@ -71,4 +71,14 @@ return [
             ],
         ],
     ],
+     'content11' => '<b>LƯU Ý (<span style="color: red">*</span>)<b><br />
+    Vui lòng cung cấp đầy đủ thông tin để cho các nhân viên tại bệnh viện dễ dàng liên lạc và lấy máu một cách nhanh nhất.<br />',
+    'thanhtoan' => '<br /> <div style="color:red;"><b>Phương thức thanh toán</b><br />
+    Khi thanh toán chi phí lấy mẫu xét nghiệm tại nhà của BV Hòa Bình<br />
+    Khách hàng cần phải thanh toán bằng tiền mặt ngay sau khi lấy mẫu xét nghiệm.<br />
+    <i><b>Tổng giá = Giá gói xét nghiệm + Phí xử lý + Phí km tăng thêm</b></i><br />
+     <br />
+    Phí km tăng thêm: tính cho km thứ 5 trở đi<br />
+    </div>
+    ',
 ];

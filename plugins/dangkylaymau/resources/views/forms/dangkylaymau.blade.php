@@ -22,6 +22,7 @@
     @endif
 @endif
 
+        {!! trans('plugins.dangkylaymau::dangkylaymau.thanhtoan') !!}
 <div class="row">
     <div class="col-md-6 col-sm-12 col-12">
         <div class="form-group">
@@ -74,7 +75,7 @@
         </div>
     @endif
     <div class="col-md-12">
-        <div class="form-group"><p>{!! trans('plugins.dangkylaymau::dangkylaymau.required_field') !!}</p></div>
+        <div class="form-group"><p>{!! trans('plugins.dangkylaymau::dangkylaymau.content11') !!}</p></div>
     </div>
 </div>
 <div class="form-group text-right">

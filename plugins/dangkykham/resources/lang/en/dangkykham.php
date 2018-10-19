@@ -50,7 +50,7 @@ return [
     'form_phone' => 'Phone',
     'form_message' => 'Message',
     'confirm_not_robot' => 'Please confirm you are not robot',
-    'required_field' => 'The field with (<span style="color: red">*</span>) is required.',
+    /*'required_field' => 'The field with (<span style="color: red">*</span>) is required.',*/
     'send_btn' => 'Send message',
     'mark_as_read' => 'Mark as read',
     'mark_as_unread' => 'Mark as unread',
@@ -71,4 +71,9 @@ return [
             ],
         ],
     ],
+    'form_ngaysinh' => "Ngày tháng năm sinh",
+    'form_chonkhoa' => "Chọn chuyên khoa",
+    'content11' => '<b>LƯU Ý (<span style="color: red">*</span>)<b><br />
+Vui lòng thông báo về các yêu cầu đặc biệt hoặc tình trạng sức khỏe để có thời gian khám bệnh phù hợp nhất.<br />
+Đối với các bệnh nam khoa và phụ sản, vui lòng liên hệ với bệnh viện để được tư vấn thời gian khám bệnh phù hợp.',
 ];

@@ -76,6 +76,8 @@ class DangkykhamServiceProvider extends ServiceProvider
             ->addVariables([
                 'dangkykham_name' => __('Đăng ký khám name'),
                 'dangkykham_subject' => __('Đăng ký khám subject'),
+                'dangkykham_ngaysinh' => __('Đăng ký khám Ngày sinh'),
+                'dangkykham_chonkhoa' => __('Đăng ký khám chuyên khoa'),
                 'dangkykham_email' => __('Đăng ký khám email'),
                 'dangkykham_phone' => __('Đăng ký khám phone'),
                 'dangkykham_address' => __('Đăng ký khám address'),

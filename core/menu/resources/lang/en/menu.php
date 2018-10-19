@@ -19,5 +19,6 @@ return [
     'blank_open_link' => 'Open link in new tab',
     'create' => 'Create menu',
     'edit' => 'Edit menu',
+    'image' => 'Image',
 
 ];

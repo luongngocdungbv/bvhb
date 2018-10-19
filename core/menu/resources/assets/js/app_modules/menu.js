@@ -10,6 +10,7 @@ class MenuNestable {
             current.data('title', current.attr('data-title'));
             current.data('related-id', current.attr('data-related-id'));
             current.data('type', current.attr('data-type'));
+            current.data('image', current.attr('data-image'));
             current.data('custom-url', current.attr('data-custom-url'));
             current.data('class', current.attr('data-class'));
             current.data('target', current.attr('data-target'));
@@ -80,11 +81,12 @@ class MenuNestable {
                 let data_related_id = 0;
                 let data_title = $('#node-title').val();
                 let data_url = $('#node-url').val();
+                let data_image = $('#node-image').val();
                 let data_css_class = $('#node-css').val();
                 let data_font_icon = $('#node-icon').val();
                 let data_target = $('#target').find('option:selected').val();
                 let url_html = '<label class="pad-bot-5"><span class="text pad-top-5 dis-inline-block" data-update="custom-url">Url</span><input type="text" data-old="' + data_url + '" value="' + data_url + '" name="custom-url"></label>';
-                html += '<li data-type="' + data_type + '" data-related-id="' + data_related_id + '" data-title="' + data_title + '" data-class="' + data_css_class + '" data-id="0" data-custom-url="' + data_url + '" data-icon-font="' + data_font_icon + '" data-target="' + data_target + '" class="dd-item dd3-item">';
+                html += '<li data-type="' + data_type + '" data-related-id="' + data_related_id + '" data-title="' + data_title + '" data-class="' + data_css_class + '" data-id="0" data-custom-url="' + data_url + '"data-image"' = data_image + '" data-icon-font="' + data_font_icon + '" data-target="' + data_target + '" class="dd-item dd3-item">';
                 html += '<div class="dd-handle dd3-handle"></div>';
                 html += '<div class="dd3-content">';
                 html += '<span class="text float-left" data-update="title">' + data_title + '</span>';
@@ -102,6 +104,10 @@ class MenuNestable {
                 html += '<label class="pad-bot-10">';
                 html += '<span class="text pad-top-5 dis-inline-block" data-update="class">CSS class</span>';
                 html += '<input type="text" data-old="' + data_css_class + '" value="' + data_css_class + '" name="class" class="form-control">';
+                html += '</label>';
+                html += '<label class="pad-bot-10">';
+                html += '<span class="text pad-top-5 dis-inline-block" data-update="image">IMAGE</span>';
+                html += '<input type="text" data-old="' + data_image + '" value="' + data_image + '" name="image" class="form-control">';
                 html += '</label>';
                 html += '<label class="pad-bot-10">';
                 html += '<span class="text pad-top-5 dis-inline-block" data-update="target">Target</span>';
@@ -124,12 +130,14 @@ class MenuNestable {
                     let data_type = find_in.attr('data-type');
                     let data_related_id = find_in.attr('data-related-id');
                     let data_title = find_in.attr('data-title');
+                    let data_image = find_in.attr('data-image');
 
-                    html += '<li data-type="' + data_type + '" data-related-id="' + data_related_id + '" data-title="' + data_title + '" data-id="0" data-target="_self" class="dd-item dd3-item">';
+                    html += '<li data-type="' + data_type + '" data-related-id="' + data_related_id + '" data-image"' = data_image +'" data-title="' + data_title + '" data-id="0" data-target="_self" class="dd-item dd3-item">';
                     html += '<div class="dd-handle dd3-handle"></div>';
                     html += '<div class="dd3-content">';
                     html += '<span class="text float-left" data-update="title">' + data_title + '</span>';
                     html += '<span class="text float-right">' + data_type + '</span>';
+                    html += '<span class="text float-right">' + data_image + '</span>';
                     html += '<a href="#" class="show-item-details"><i class="fa fa-angle-down"></i></a>';
                     html += '<div class="clearfix"></div>';
                     html += '</div>';
@@ -137,6 +145,10 @@ class MenuNestable {
                     html += '<label class="pad-bot-5">';
                     html += '<span class="text pad-top-5 dis-inline-block" data-update="title">Title</span>';
                     html += '<input type="text" data-old="' + data_title + '" value="' + data_title + '" name="title" class="form-control">';
+                    html += '</label>';
+                    html += '<label class="pad-bot-5">';
+                    html += '<span class="text pad-top-5 dis-inline-block" data-update="title">Image</span>';
+                    html += '<input type="text" data-old="' + data_image + '" value="' + data_image + '" name="image" class="form-control">';
                     html += '</label>';
                     html += '<label class="pad-bot-5 dis-inline-block"><span class="text pad-top-5" data-update="icon-font">Icon - font</span><input type="text" name="icon-font" class="form-control"></label>';
                     html += '<label class="pad-bot-10">';

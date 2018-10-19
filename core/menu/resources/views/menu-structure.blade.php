@@ -32,6 +32,10 @@
                                             <input type="text" class="form-control" id="node-icon" placeholder="fa fa-home" autocomplete="false">
                                         </div>
                                         <div class="form-group">
+                                            <label for="node-image">{{ trans('core.menu::menu.image') }}</label>
+                                            <input type="text" class="form-control" id="node-image" autocomplete="false">
+                                        </div>
+                                        <div class="form-group">
                                             <label for="node-css">{{ trans('core.menu::menu.css_class') }}</label>
                                             <input type="text" class="form-control" id="node-css" autocomplete="false">
                                         </div>

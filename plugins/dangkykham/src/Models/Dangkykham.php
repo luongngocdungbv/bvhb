@@ -31,6 +31,8 @@ class Dangkykham extends Eloquent
     protected $fillable = [
         'name',
         'email',
+        'ngaysinh',
+        'chonkhoa',
         'phone',
         'address',
         'subject',
