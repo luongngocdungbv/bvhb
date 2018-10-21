@@ -51,12 +51,12 @@ class PublicController
 
         SeoHelper::setTitle(__('Chuyên Gia Bệnh Viện Đa Khoa Hòa Bình'));
 
-        $limit = request()->input('paginate', 9);
+        $limit = request()->input('paginate', 18);
 
-        $chuyengias = $this->chuyengiaRepository->getModel()->orderBy('created_at', 'desc')->paginate($limit);
-        
+        $chuyengias = $this->chuyengiaRepository->getModel()->where('bancovan','=','ngoaivien')->orderBy('created_at', 'desc')->paginate($limit);
+        $noiviens = $this->chuyengiaRepository->getModel()->where('bancovan','=','noivien')->orderBy('created_at', 'desc')->paginate($limit);
         Theme::breadcrumb()->add(__('Trang Chủ'), route('public.index'))->add(__('Chuyên gia'), route('public.chuyengias'));
         
-        return Theme::scope('chuyengias', compact('chuyengias'))->render();
+        return Theme::scope('chuyengias', compact(['chuyengias','noiviens']))->render();
     }
 }

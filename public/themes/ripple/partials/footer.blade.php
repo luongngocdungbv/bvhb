@@ -54,13 +54,13 @@
 
 @if (session()->has('success_msg'))
     <script type="text/javascript">
-        swal('{{ __('Success') }}', "{{ session('success_msg', '') }}", 'success');
+        swal('{{ __('Bệnh viện đa khoa Hòa Bình Xin chân thành cám ơn bạn đã đăng ký thành công') }}', "{{ session('success_msg', '') }}", 'success');
     </script>
 @endif
 
 @if (session()->has('error_msg'))
     <script type="text/javascript">
-        swal('{{ __('Success') }}', "{{ session('error_msg', '') }}", 'error');
+        swal('{{ __('#_#') }}', "{{ session('error_msg', '') }}", 'error');
     </script>
 @endif
 

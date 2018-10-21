@@ -5,9 +5,13 @@
     Version:  1.0
     Date Created: 09/21/2016
     Date Updated: 09/21/2016
-    Author: Nghia Luong Minh
-    Website: http://nghiadev.com
+    Author: Dung Luong Ngoc
+    Website: http://facebook.com/nhoanhkhoquen
 */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+
 a,
 input,
 textarea,
@@ -1149,6 +1153,10 @@ ul, ol {
   z-index: 20;
 }
 
+@media screen and (min-device-width: 512px) and (max-device-width: 991px) { 
+    /* STYLES HERE */
+} 
+
 @media screen and (max-width: 991px) {
   .post__inside {
     margin-bottom: 30px;
@@ -1164,10 +1172,10 @@ ul, ol {
   }
 
   .mask {
-      width: 143px !important;
+      width: 250px !important;
   }
   .light_custom { 
-      width: 143px !important;
+      width: 250px !important;
   }
 }
 .post__inside--feature .post__header {
@@ -2505,7 +2513,12 @@ ul, ol {
   width: 50%;
   float: left;
 }
-
+@media screen and (min-width: 991px) {
+  .gallery-wrap .gallery-item .img-wrap img{
+    width: 374px !important;
+    height: 210px !important;
+  }
+}
 @media screen and (max-width: 991px) {
   .post-group--hero .post-group__left, .post-group--hero .post-group__right {
     width: 100%;
@@ -4040,6 +4053,9 @@ body[dir=rtl] .widget__about .person-detail i {
     max-width: 100px;
     display: inline-flex;
 }
+.item-expert-text {
+    height: 70px;
+}
 .item-expert .item-expert-text h4 {
     padding: 10px 0;
     text-align: center ;
@@ -4140,6 +4156,7 @@ body[dir=rtl] .widget__about .person-detail i {
     text-align: center;
 }
 
+
 .gallery-text h3{
     text-transform: uppercase;
     padding:10px;
@@ -4210,4 +4227,13 @@ body[dir=rtl] .widget__about .person-detail i {
 }
 .pagination_css{
   text-align: center;
+}
+.chuyengia_custom ul.nav.nav-tabs {
+    text-align: center !important;
+}
+.chuyengia_custom ul.nav.nav-tabs li {
+    text-align: center;
+    /* margin: 0px auto; */
+    display: inline-flex !important;
+    float: none !important;
 }

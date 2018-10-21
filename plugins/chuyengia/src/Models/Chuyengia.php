@@ -30,6 +30,7 @@ class Chuyengia extends Eloquent
         'image',
         'description',
         'chucvu',
+        'bancovan',
         'chuyenkhoa',
         'hocvan',
         'featured',

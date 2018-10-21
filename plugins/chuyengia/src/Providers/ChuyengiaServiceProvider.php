@@ -87,6 +87,7 @@ class ChuyengiaServiceProvider extends ServiceProvider
                     'priority' => 5,
                     'parent_id' => 'cms-plugins-chuyengia',
                     'name' => trans('plugins.chuyengia::chuyengia.name'),
+                    'icon' => 'fas fa-users',
                     'url' => route('chuyengia.list'),
                     'permissions' => ['chuyengia.list'],
                 ])
@@ -105,6 +106,7 @@ class ChuyengiaServiceProvider extends ServiceProvider
                     'parent_id' => 'cms-plugins-chuyengia',
                     'name' => trans('plugins.danhmucbvhb::danhmucbvhb.name'),
                     'url' => route('danhmucbvhb.list'),
+                    'icon' => 'fa fa-list',
                     'permissions' => ['danhmucbvhb.list'],
                 ])
                  ->registerItem([

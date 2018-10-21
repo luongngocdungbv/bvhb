@@ -17,6 +17,11 @@ class ChuyengiaRequest extends Request
     {
         return [
             'name' => 'required',
+            'description' => 'required',
+            'chucvu' => 'required',
+            'bancovan' => 'required',
+            'chuyenkhoa' => 'required',
+            'hocvan' => 'required',
         ];
     }
 }

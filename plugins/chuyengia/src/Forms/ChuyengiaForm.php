@@ -48,7 +48,7 @@ class ChuyengiaForm extends FormAbstract
                 'label_attr' => ['class' => 'control-label required',],
                 'style' => ['width'=> '200px'],
                 'choices' => [
-                    0 => '---Chọn Chuyên Khoa---',
+                     ''=> '---Chọn Chuyên Khoa---',
                     'Khoa Khám bệnh' => 'Khoa Khám bệnh',
                     'Cấp cứu hồi sức tích cực và chống độc' => 'Cấp cứu hồi sức tích cực và chống độc',
                     'Khoa Sản' => 'Khoa Sản',
@@ -61,6 +61,8 @@ class ChuyengiaForm extends FormAbstract
                     'Khoa Xét nghiệm'=>'Khoa Xét nghiệm',
                     'Khoa Dược'=>'Khoa Dược',
                     'Khoa kiểm soát nhiễm khuẩn'=>'Khoa kiểm soát nhiễm khuẩn',
+                    'Phòng Điều Dưỡng'=>'Phòng Điều Dưỡng',
+                    'Phòng Quản Lý Chất Lượng'=>'Phòng Quản Lý Chất Lượng',
                     'Phòng Hành Chính'=>'Phòng Hành Chính',
                     'Phòng Điện Nước'=> 'Phòng Điện Nước',
                     'Phòng IT'=> 'Phòng IT',
@@ -72,13 +74,14 @@ class ChuyengiaForm extends FormAbstract
                 'style' => ['width'=> '200px'],
                 'choices' => [
                     0 => '---Trình độ học vấn---',
-                    'BSCKI.' => 'BSCKI',
-                    'BSCKII.' => 'BSCKII',
-                    'CN.' => 'CN',
-                    'CĐ.' => 'CĐ',
-                    'TC.' => 'TC',
-                    'BS.' => 'BS',
-                    'ĐD.'=> 'ĐD',
+                    'BSCKI.' => 'BSCKI.',
+                    'BSCKII.' => 'BSCKII.',
+                    'YS.' => 'YS.',
+                    'CN.' => 'CN.',
+                    'CĐ.' => 'CĐ.',
+                    'TC.' => 'TC.',
+                    'BS.' => 'BS.',
+                    'ĐD.'=> 'ĐD.',
                     'GS. TS.'=> 'GS. TS.',
                     'Ths. Bs.'=>'Ths. Bs.',
                     'Ths.'=>'Ths.',
@@ -88,6 +91,14 @@ class ChuyengiaForm extends FormAbstract
                     'KTV'=>'KTV',
                     'Ths.BSCKII.'=>'Ths.BSCKII.',
                     'CNDD'=>'CNDD',
+                ],
+            ])
+            ->add('bancovan', 'customRadio', [
+                'label' => __('Ngoại Viện / Nội Viện'),
+                'label_attr' => ['class' => 'control-label'],
+                'choices' => [
+                    ["ngoaivien", "Ngoại Viện"],
+                    ["noivien", "Nội Viện"],
                 ],
             ])
             ->add('featured', 'onOff', [

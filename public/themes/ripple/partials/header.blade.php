@@ -40,9 +40,9 @@
                             <ul class="pull-left">
                                 @if (Auth::guard('member')->check())
                                     <li><a href="{{ route('public.member.overview') }}" rel="nofollow"><i class="fa fa-user"></i> <span>{{ Auth::guard('member')->user()->name }}</span></a></li>
-                                    <li><a href="{{ route('public.member.logout') }}" rel="nofollow"><i class="fa fa-sign-out"></i> {{ __('Logout') }}</a></li>
+                                    <li><a href="{{ route('public.member.logout') }}" rel="nofollow"><i class="fa fa-sign-out"></i> {{ trans('plugins.member::member.logout') }} </a></li>
                                 @else
-                                    <li><a href="{{ route('public.member.login') }}" rel="nofollow"><i class="fa fa-sign-in"></i> {{ __('Login') }}</a></li>
+                                    <li><a href="{{ route('public.member.login') }}" rel="nofollow"><i class="fa fa-sign-in"></i> {{ trans('plugins.member::member.login') }}</a></li>
                                 @endif
                             </ul>
                         @endif
