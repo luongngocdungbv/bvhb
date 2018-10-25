@@ -17,7 +17,7 @@
                                         </div>
                                         <div class="gallery-detail">
                                             <div class="gallery-title"><a href="{{ route('public.gallery', ['slug' => $gallery->slug]) }}">{{ $gallery->name }}</a></div>
-                                            <div class="gallery-author">{{ trans('plugins.gallery::gallery.by') }} {{ $gallery->user ? $gallery->user->getFullName() : '' }}</div>
+                                            <!-- <div class="gallery-author">{{ trans('plugins.gallery::gallery.by') }} {{ $gallery->user ? $gallery->user->getFullName() : '' }}</div> -->
                                         </div>
                                     </div>
                                 @endforeach

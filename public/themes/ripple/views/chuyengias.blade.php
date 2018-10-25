@@ -16,7 +16,7 @@
   
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#ngoaivien">Chuyên Gia Ngoại Viện</a></li>
-    <li><a data-toggle="tab" href="#noivien">Chuyên Gia Nội Viện</a></li>
+    <li><a data-toggle="tab" href="#noivien">Đội Ngũ Nhân Viên</a></li>
    
   </ul>
 
@@ -30,7 +30,9 @@
                             <div class="container">
                             @foreach ($chuyengias as $chuyengia)
                                 <div class="item-expert col-lg-4 col-xs-12 col-sm-6  col-md-6">
-                                    <a href="{{ route('public.single', $chuyengia->slug) }}"><img src="@if($chuyengia->image == '')/vendor/core/images/favicon.png @else {{ get_object_image($chuyengia->image, 'medium') }}@endif " alt="{{ $chuyengia->name }}" width="342" height="300" style="width:100%;"></a>
+                                    <a href="{{ route('public.single', $chuyengia->slug) }}">
+                                        <img src="@if($chuyengia->image == '')/vendor/core/images/favicon.png @else {{ get_object_image($chuyengia->image, 'medium') }}@endif " alt="{{ $chuyengia->name }}" width="342" height="300" style="width:100%;" class="image_chuyengia" style="object-fit: cover">
+                                    </a>
                                     <div class="name-doctor">
                                         <a href="{{ route('public.single', $chuyengia->slug) }}"><p><span>{{ $chuyengia->hocvan }}</span> {{ $chuyengia->name }}</p></a>
                                     </div>
@@ -57,7 +59,9 @@
                             <div class="container">
                             @foreach ($noiviens as $noivien)
                                 <div class="item-expert col-lg-4 col-xs-12 col-sm-6  col-md-6">
-                                    <a href="{{ route('public.single', $noivien->slug) }}"><img src="@if($noivien->image == '')/vendor/core/images/favicon.png @else {{ get_object_image($noivien->image, 'medium') }}@endif " alt="{{ $noivien->name }}" width="342" height="300" style="width:100%;"></a>
+                                    <a href="{{ route('public.single', $noivien->slug) }}">
+                                        <img src="@if($noivien->image == '')/vendor/core/images/favicon.png @else {{ get_object_image($noivien->image, 'medium') }}@endif " alt="{{ $noivien->name }}" width="342" height="300" style="width:100%;"  class="image_chuyengia" style="object-fit: cover">
+                                    </a>
                                     <div class="name-doctor">
                                         <a href="{{ route('public.single', $noivien->slug) }}"><p><span>{{ $noivien->hocvan }}</span> {{ $noivien->name }}</p></a>
                                     </div>

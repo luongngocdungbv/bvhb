@@ -56,6 +56,41 @@
 
                     <div class="form-group">
                         <label class="text-title-field"
+                               for="facebook">{{ trans('core.setting::setting.general.facebook') }}</label>
+                        <input type="email" class="next-input" name="facebook" id="facebook"
+                               value="{{ setting('facebook') }}">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="text-title-field"
+                               for="twitter">{{ trans('core.setting::setting.general.twitter') }}</label>
+                        <input type="email" class="next-input" name="twitter" id="twitter"
+                               value="{{ setting('twitter') }}">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="text-title-field"
+                               for="google_plus">{{ trans('core.setting::setting.general.google_plus') }}</label>
+                        <input type="email" class="next-input" name="google_plus" id="google_plus"
+                               value="{{ setting('google_plus') }}">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="text-title-field"
+                               for="contact_phone">{{ trans('core.setting::setting.general.contact_phone') }}</label>
+                        <input type="email" class="next-input" name="contact_phone" id="contact_phone"
+                               value="{{ setting('contact_phone') }}">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="text-title-field"
+                               for="contact_hotline">{{ trans('core.setting::setting.general.contact_hotline') }}</label>
+                        <input type="email" class="next-input" name="contact_hotline" id="contact_hotline"
+                               value="{{ setting('contact_hotline') }}">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="text-title-field"
                                for="time_zone">{{ trans('core.setting::setting.general.time_zone') }}
                         </label>
                         <div class="ui-select-wrapper">
